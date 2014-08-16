@@ -1,0 +1,1210 @@
+--D1_q[18] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[18] at LC5_B20
+--operation mode is clrb_cntr
+
+D1_q[18]_lut_out = (D1_q[18] $ D1L73) & reduce_nor_24;
+D1_q[18] = DFFEA(D1_q[18]_lut_out, GLOBAL(clk), , , , , );
+
+
+--D1_q[17] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[17] at LC4_B20
+--operation mode is clrb_cntr
+
+D1_q[17]_lut_out = (D1_q[17] $ D1L53) & reduce_nor_24;
+D1_q[17] = DFFEA(D1_q[17]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L73 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[17]~COUT at LC4_B20
+--operation mode is clrb_cntr
+
+D1L73 = CARRY(D1_q[17] & D1L53);
+
+
+--D1_q[16] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[16] at LC3_B20
+--operation mode is clrb_cntr
+
+D1_q[16]_lut_out = (D1_q[16] $ D1L33) & reduce_nor_24;
+D1_q[16] = DFFEA(D1_q[16]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L53 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[16]~COUT at LC3_B20
+--operation mode is clrb_cntr
+
+D1L53 = CARRY(D1_q[16] & D1L33);
+
+
+--D1_q[15] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[15] at LC2_B20
+--operation mode is clrb_cntr
+
+D1_q[15]_lut_out = (D1_q[15] $ D1L13) & reduce_nor_24;
+D1_q[15] = DFFEA(D1_q[15]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L33 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[15]~COUT at LC2_B20
+--operation mode is clrb_cntr
+
+D1L33 = CARRY(D1_q[15] & D1L13);
+
+
+--D1_q[14] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] at LC1_B20
+--operation mode is clrb_cntr
+
+D1_q[14]_lut_out = (D1_q[14] $ D1L92) & reduce_nor_24;
+D1_q[14] = DFFEA(D1_q[14]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L13 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[14]~COUT at LC1_B20
+--operation mode is clrb_cntr
+
+D1L13 = CARRY(D1_q[14] & D1L92);
+
+
+--D1_q[13] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] at LC8_B18
+--operation mode is clrb_cntr
+
+D1_q[13]_lut_out = (D1_q[13] $ D1L72) & reduce_nor_24;
+D1_q[13] = DFFEA(D1_q[13]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L92 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[13]~COUT at LC8_B18
+--operation mode is clrb_cntr
+
+D1L92 = CARRY(D1_q[13] & D1L72);
+
+
+--D1_q[12] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] at LC7_B18
+--operation mode is clrb_cntr
+
+D1_q[12]_lut_out = (D1_q[12] $ D1L52) & reduce_nor_24;
+D1_q[12] = DFFEA(D1_q[12]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L72 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[12]~COUT at LC7_B18
+--operation mode is clrb_cntr
+
+D1L72 = CARRY(D1_q[12] & D1L52);
+
+
+--D1_q[11] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] at LC6_B18
+--operation mode is clrb_cntr
+
+D1_q[11]_lut_out = (D1_q[11] $ D1L32) & reduce_nor_24;
+D1_q[11] = DFFEA(D1_q[11]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L52 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[11]~COUT at LC6_B18
+--operation mode is clrb_cntr
+
+D1L52 = CARRY(D1_q[11] & D1L32);
+
+
+--D1_q[10] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] at LC5_B18
+--operation mode is clrb_cntr
+
+D1_q[10]_lut_out = (D1_q[10] $ D1L12) & reduce_nor_24;
+D1_q[10] = DFFEA(D1_q[10]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L32 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[10]~COUT at LC5_B18
+--operation mode is clrb_cntr
+
+D1L32 = CARRY(D1_q[10] & D1L12);
+
+
+--D1_q[9] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9] at LC4_B18
+--operation mode is clrb_cntr
+
+D1_q[9]_lut_out = (D1_q[9] $ D1L91) & reduce_nor_24;
+D1_q[9] = DFFEA(D1_q[9]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L12 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[9]~COUT at LC4_B18
+--operation mode is clrb_cntr
+
+D1L12 = CARRY(D1_q[9] & D1L91);
+
+
+--D1_q[8] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8] at LC3_B18
+--operation mode is clrb_cntr
+
+D1_q[8]_lut_out = (D1_q[8] $ D1L71) & reduce_nor_24;
+D1_q[8] = DFFEA(D1_q[8]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L91 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[8]~COUT at LC3_B18
+--operation mode is clrb_cntr
+
+D1L91 = CARRY(D1_q[8] & D1L71);
+
+
+--D1_q[7] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7] at LC2_B18
+--operation mode is clrb_cntr
+
+D1_q[7]_lut_out = (D1_q[7] $ D1L51) & reduce_nor_24;
+D1_q[7] = DFFEA(D1_q[7]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L71 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[7]~COUT at LC2_B18
+--operation mode is clrb_cntr
+
+D1L71 = CARRY(D1_q[7] & D1L51);
+
+
+--D1_q[6] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6] at LC1_B18
+--operation mode is clrb_cntr
+
+D1_q[6]_lut_out = (D1_q[6] $ D1L31) & reduce_nor_24;
+D1_q[6] = DFFEA(D1_q[6]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L51 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[6]~COUT at LC1_B18
+--operation mode is clrb_cntr
+
+D1L51 = CARRY(D1_q[6] & D1L31);
+
+
+--D1_q[5] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5] at LC8_B16
+--operation mode is clrb_cntr
+
+D1_q[5]_lut_out = (D1_q[5] $ D1L11) & reduce_nor_24;
+D1_q[5] = DFFEA(D1_q[5]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L31 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[5]~COUT at LC8_B16
+--operation mode is clrb_cntr
+
+D1L31 = CARRY(D1_q[5] & D1L11);
+
+
+--D1_q[4] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4] at LC7_B16
+--operation mode is clrb_cntr
+
+D1_q[4]_lut_out = (D1_q[4] $ D1L9) & reduce_nor_24;
+D1_q[4] = DFFEA(D1_q[4]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L11 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[4]~COUT at LC7_B16
+--operation mode is clrb_cntr
+
+D1L11 = CARRY(D1_q[4] & D1L9);
+
+
+--D1_q[3] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3] at LC6_B16
+--operation mode is clrb_cntr
+
+D1_q[3]_lut_out = (D1_q[3] $ D1L7) & reduce_nor_24;
+D1_q[3] = DFFEA(D1_q[3]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L9 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[3]~COUT at LC6_B16
+--operation mode is clrb_cntr
+
+D1L9 = CARRY(D1_q[3] & D1L7);
+
+
+--D1_q[2] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[2] at LC5_B16
+--operation mode is clrb_cntr
+
+D1_q[2]_lut_out = (D1_q[2] $ D1L5) & reduce_nor_24;
+D1_q[2] = DFFEA(D1_q[2]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L7 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[2]~COUT at LC5_B16
+--operation mode is clrb_cntr
+
+D1L7 = CARRY(D1_q[2] & D1L5);
+
+
+--D1_q[1] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[1] at LC4_B16
+--operation mode is clrb_cntr
+
+D1_q[1]_lut_out = (D1_q[1] $ D1L3) & reduce_nor_24;
+D1_q[1] = DFFEA(D1_q[1]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L5 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[1]~COUT at LC4_B16
+--operation mode is clrb_cntr
+
+D1L5 = CARRY(D1_q[1] & D1L3);
+
+
+--D1_q[0] is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[0] at LC3_B16
+--operation mode is clrb_cntr
+
+D1_q[0]_lut_out = (!D1_q[0]) & reduce_nor_24;
+D1_q[0] = DFFEA(D1_q[0]_lut_out, GLOBAL(clk), , , , , );
+
+--D1L3 is lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[0]~COUT at LC3_B16
+--operation mode is clrb_cntr
+
+D1L3 = CARRY(D1_q[0]);
+
+
+--timer_out0[1] is timer_out0[1] at LC8_A13
+--operation mode is normal
+
+timer_out0[1]_lut_out = A1L63 & timer_counter0[1] # !A1L63 & timer_counter2[1];
+timer_out0[1] = DFFEA(timer_out0[1]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_out0[0] is timer_out0[0] at LC4_A13
+--operation mode is normal
+
+timer_out0[0]_lut_out = A1L63 & timer_counter0[0] # !A1L63 & timer_counter2[0];
+timer_out0[0] = DFFEA(timer_out0[0]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_out0[2] is timer_out0[2] at LC6_A13
+--operation mode is normal
+
+timer_out0[2]_lut_out = A1L63 & timer_counter0[2] # !A1L63 & timer_counter2[2];
+timer_out0[2] = DFFEA(timer_out0[2]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_out0[3] is timer_out0[3] at LC3_A13
+--operation mode is normal
+
+timer_out0[3]_lut_out = A1L63 & timer_counter0[3] # !A1L63 & timer_counter2[3];
+timer_out0[3] = DFFEA(timer_out0[3]_lut_out, GLOBAL(clk), , , , , );
+
+
+--C1L2 is led:segled_0|Mux_5_rtl_4~9 at LC2_C8
+--operation mode is normal
+
+C1L2 = timer_out0[3] & (timer_out0[0] & timer_out0[1] # !timer_out0[0] & timer_out0[2]) # !timer_out0[3] & timer_out0[2] & (timer_out0[0] $ timer_out0[1]);
+
+
+--C1L5 is led:segled_0|Mux_8_rtl_4~9 at LC7_A13
+--operation mode is normal
+
+C1L5 = timer_out0[1] & !timer_out0[3] & timer_out0[0] # !timer_out0[1] & (timer_out0[2] & !timer_out0[3] # !timer_out0[2] & timer_out0[0]);
+
+
+--C1L6 is led:segled_0|Mux_9_rtl_4~9 at LC1_C11
+--operation mode is normal
+
+C1L6 = timer_out0[3] & !timer_out0[1] & timer_out0[2] # !timer_out0[3] & (timer_out0[1] & (timer_out0[0] # !timer_out0[2]) # !timer_out0[1] & timer_out0[0] & !timer_out0[2]);
+
+
+--A1L48 is rtl~57 at LC4_C3
+--operation mode is normal
+
+A1L48 = !timer_out0[3] & (timer_out0[1] & timer_out0[2] & timer_out0[0] # !timer_out0[1] & !timer_out0[2]);
+
+
+--timer_out1[1] is timer_out1[1] at LC8_A23
+--operation mode is normal
+
+timer_out1[1]_lut_out = timer_counter3[1] # timer_counter1[1] & A1L63;
+timer_out1[1] = DFFEA(timer_out1[1]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_out1[0] is timer_out1[0] at LC1_A19
+--operation mode is normal
+
+timer_out1[0]_lut_out = timer_counter3[0] # timer_counter1[0] & A1L63;
+timer_out1[0] = DFFEA(timer_out1[0]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_out1[2] is timer_out1[2] at LC1_A12
+--operation mode is normal
+
+timer_out1[2]_lut_out = timer_counter3[2] # timer_counter1[2] & A1L63;
+timer_out1[2] = DFFEA(timer_out1[2]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_out1[3] is timer_out1[3] at LC1_A11
+--operation mode is normal
+
+timer_out1[3]_lut_out = timer_counter3[3] # timer_counter1[3] & A1L63;
+timer_out1[3] = DFFEA(timer_out1[3]_lut_out, GLOBAL(clk), , , , , );
+
+
+--C2L2 is led:segled_1|Mux_5_rtl_4~9 at LC4_A23
+--operation mode is normal
+
+C2L2 = timer_out1[3] & (timer_out1[0] & timer_out1[1] # !timer_out1[0] & timer_out1[2]) # !timer_out1[3] & timer_out1[2] & (timer_out1[0] $ timer_out1[1]);
+
+
+--C2L5 is led:segled_1|Mux_8_rtl_4~9 at LC3_A23
+--operation mode is normal
+
+C2L5 = timer_out1[1] & !timer_out1[3] & timer_out1[0] # !timer_out1[1] & (timer_out1[2] & !timer_out1[3] # !timer_out1[2] & timer_out1[0]);
+
+
+--C2L6 is led:segled_1|Mux_9_rtl_4~9 at LC6_A23
+--operation mode is normal
+
+C2L6 = timer_out1[3] & !timer_out1[1] & timer_out1[2] # !timer_out1[3] & (timer_out1[1] & (timer_out1[0] # !timer_out1[2]) # !timer_out1[1] & timer_out1[0] & !timer_out1[2]);
+
+
+--A1L58 is rtl~64 at LC1_A23
+--operation mode is normal
+
+A1L58 = !timer_out1[3] & (timer_out1[1] & timer_out1[2] & timer_out1[0] # !timer_out1[1] & !timer_out1[2]);
+
+
+--timer_out2[1] is timer_out2[1] at LC7_A22
+--operation mode is normal
+
+timer_out2[1]_lut_out = timer_counter4[1] # timer_counter2[1] & A1L63;
+timer_out2[1] = DFFEA(timer_out2[1]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_out2[0] is timer_out2[0] at LC6_A22
+--operation mode is normal
+
+timer_out2[0]_lut_out = timer_counter4[0] # timer_counter2[0] & A1L63;
+timer_out2[0] = DFFEA(timer_out2[0]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_out2[2] is timer_out2[2] at LC4_A22
+--operation mode is normal
+
+timer_out2[2]_lut_out = timer_counter4[2] # timer_counter2[2] & A1L63;
+timer_out2[2] = DFFEA(timer_out2[2]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_out2[3] is timer_out2[3] at LC1_A13
+--operation mode is normal
+
+timer_out2[3]_lut_out = timer_counter4[3] # timer_counter2[3] & A1L63;
+timer_out2[3] = DFFEA(timer_out2[3]_lut_out, GLOBAL(clk), , , , , );
+
+
+--C3L2 is led:segled_2|Mux_5_rtl_4~9 at LC3_A22
+--operation mode is normal
+
+C3L2 = timer_out2[3] & (timer_out2[0] & timer_out2[1] # !timer_out2[0] & timer_out2[2]) # !timer_out2[3] & timer_out2[2] & (timer_out2[0] $ timer_out2[1]);
+
+
+--C3L5 is led:segled_2|Mux_8_rtl_4~9 at LC2_A22
+--operation mode is normal
+
+C3L5 = timer_out2[1] & !timer_out2[3] & timer_out2[0] # !timer_out2[1] & (timer_out2[2] & !timer_out2[3] # !timer_out2[2] & timer_out2[0]);
+
+
+--C3L6 is led:segled_2|Mux_9_rtl_4~9 at LC5_A22
+--operation mode is normal
+
+C3L6 = timer_out2[3] & !timer_out2[1] & timer_out2[2] # !timer_out2[3] & (timer_out2[1] & (timer_out2[0] # !timer_out2[2]) # !timer_out2[1] & timer_out2[0] & !timer_out2[2]);
+
+
+--A1L68 is rtl~71 at LC7_A14
+--operation mode is normal
+
+A1L68 = !timer_out2[3] & (timer_out2[1] & timer_out2[2] & timer_out2[0] # !timer_out2[1] & !timer_out2[2]);
+
+
+--A1L88Q is speaker_out~reg0 at LC5_A1
+--operation mode is normal
+
+A1L88Q_lut_out = A1L83 & A1L63;
+A1L88Q = DFFEA(A1L88Q_lut_out, !GLOBAL(clk), , , , , );
+
+
+--timer_counter0[1] is timer_counter0[1] at LC6_A7
+--operation mode is normal
+
+timer_counter0[1]_lut_out = A1L13 & (timer_counter0[1] $ (A1L7 & !timer_counter0[0]));
+timer_counter0[1] = DFFEA(timer_counter0[1]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_counter2[1] is timer_counter2[1] at LC3_A4
+--operation mode is normal
+
+timer_counter2[1]_lut_out = reduce_nor_169 & A1L08 & A1L41;
+timer_counter2[1] = DFFEA(timer_counter2[1]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_counter4[3] is timer_counter4[3] at LC3_A2
+--operation mode is normal
+
+timer_counter4[3]_lut_out = A1L38 & (A1L93 # !A1L42 & timer_counter4[3]);
+timer_counter4[3] = DFFEA(timer_counter4[3]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_counter4[2] is timer_counter4[2] at LC4_A2
+--operation mode is normal
+
+timer_counter4[2]_lut_out = A1L38 & A1L61 & (!timer_counter4[3] # !A1L52);
+timer_counter4[2] = DFFEA(timer_counter4[2]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_counter4[1] is timer_counter4[1] at LC6_A2
+--operation mode is normal
+
+timer_counter4[1]_lut_out = A1L71 & A1L38 & (!timer_counter4[3] # !A1L52);
+timer_counter4[1] = DFFEA(timer_counter4[1]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_counter4[0] is timer_counter4[0] at LC2_A2
+--operation mode is normal
+
+timer_counter4[0]_lut_out = A1L38 & (A1L04 # A1L52 & timer_counter4[3]);
+timer_counter4[0] = DFFEA(timer_counter4[0]_lut_out, GLOBAL(clk), , , , , );
+
+
+--A1L22 is i~5840 at LC1_A2
+--operation mode is normal
+
+A1L22 = !timer_counter4[0] & !timer_counter4[1] & !timer_counter4[2] & !timer_counter4[3];
+
+
+--timer_counter3[3] is timer_counter3[3] at LC8_A5
+--operation mode is normal
+
+timer_counter3[3]_lut_out = A1L23 & (sw_pulse1 & A1L3 # !sw_pulse1 & A1L81);
+timer_counter3[3] = DFFEA(timer_counter3[3]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_counter3[0] is timer_counter3[0] at LC5_A5
+--operation mode is normal
+
+timer_counter3[0]_lut_out = A1L01 & reduce_nor_217;
+timer_counter3[0] = DFFEA(timer_counter3[0]_lut_out, GLOBAL(clk), , , , , );
+
+
+--A1L86 is reduce_nor_11~0 at LC1_A5
+--operation mode is normal
+
+A1L86 = !timer_counter3[0] & !timer_counter3[3];
+
+
+--timer_counter3[2] is timer_counter3[2] at LC1_A8
+--operation mode is normal
+
+timer_counter3[2]_lut_out = reduce_nor_217 & (A1L8 # A1L9 # !reduce_nor_208);
+timer_counter3[2] = DFFEA(timer_counter3[2]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_counter3[1] is timer_counter3[1] at LC2_A8
+--operation mode is normal
+
+timer_counter3[1]_lut_out = reduce_nor_208 & reduce_nor_217 & A1L91;
+timer_counter3[1] = DFFEA(timer_counter3[1]_lut_out, GLOBAL(clk), , , , , );
+
+
+--A1L63 is i~5884 at LC2_A1
+--operation mode is normal
+
+A1L63 = !timer_counter3[1] & !timer_counter3[2] & A1L86 & A1L22;
+
+
+--timer_counter0[0] is timer_counter0[0] at LC8_A7
+--operation mode is normal
+
+timer_counter0[0]_lut_out = reduce_nor_105 & (A1L7 $ timer_counter0[0] # !reduce_nor_96);
+timer_counter0[0] = DFFEA(timer_counter0[0]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_counter2[0] is timer_counter2[0] at LC4_A4
+--operation mode is normal
+
+timer_counter2[0]_lut_out = A1L11 & A1L08;
+timer_counter2[0] = DFFEA(timer_counter2[0]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_counter0[2] is timer_counter0[2] at LC5_A7
+--operation mode is normal
+
+timer_counter0[2]_lut_out = A1L13 & (timer_counter0[2] $ (A1L82 & A1L7));
+timer_counter0[2] = DFFEA(timer_counter0[2]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_counter2[2] is timer_counter2[2] at LC2_A4
+--operation mode is normal
+
+timer_counter2[2]_lut_out = A1L03 & (sw_pulse0 & A1L1 # !sw_pulse0 & A1L02);
+timer_counter2[2] = DFFEA(timer_counter2[2]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_counter0[3] is timer_counter0[3] at LC3_A1
+--operation mode is normal
+
+timer_counter0[3]_lut_out = A1L21 & reduce_nor_105;
+timer_counter0[3] = DFFEA(timer_counter0[3]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_counter2[3] is timer_counter2[3] at LC1_A3
+--operation mode is normal
+
+timer_counter2[3]_lut_out = A1L08 & (A1L12 # timer_counter2[3] $ A1L32);
+timer_counter2[3] = DFFEA(timer_counter2[3]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_counter1[1] is timer_counter1[1] at LC6_A6
+--operation mode is normal
+
+timer_counter1[1]_lut_out = A1L33 & (timer_counter1[1] $ (timer_clk1 & !timer_counter1[0]));
+timer_counter1[1] = DFFEA(timer_counter1[1]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_counter1[0] is timer_counter1[0] at LC7_A6
+--operation mode is normal
+
+timer_counter1[0]_lut_out = reduce_nor_139 & (timer_clk1 $ timer_counter1[0] # !reduce_nor_130);
+timer_counter1[0] = DFFEA(timer_counter1[0]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_counter1[2] is timer_counter1[2] at LC4_A6
+--operation mode is normal
+
+timer_counter1[2]_lut_out = A1L33 & (timer_counter1[2] $ (A1L92 & timer_clk1));
+timer_counter1[2] = DFFEA(timer_counter1[2]_lut_out, GLOBAL(clk), , , , , );
+
+
+--timer_counter1[3] is timer_counter1[3] at LC2_A3
+--operation mode is normal
+
+timer_counter1[3]_lut_out = A1L31 & reduce_nor_139;
+timer_counter1[3] = DFFEA(timer_counter1[3]_lut_out, GLOBAL(clk), , , , , );
+
+
+--A1L73 is i~5894 at LC4_A1
+--operation mode is normal
+
+A1L73 = !timer_counter1[3] & !timer_counter2[3] & !timer_counter0[3];
+
+
+--A1L62 is i~5845 at LC8_A4
+--operation mode is normal
+
+A1L62 = !timer_counter2[0] & !timer_counter2[1] & !timer_counter2[2];
+
+
+--A1L53 is i~5857 at LC1_A6
+--operation mode is normal
+
+A1L53 = !timer_counter1[0] & !timer_counter1[1] & !timer_counter1[2];
+
+
+--A1L43 is i~5856 at LC1_A7
+--operation mode is normal
+
+A1L43 = !timer_counter0[0] & !timer_counter0[1] & !timer_counter0[2];
+
+
+--A1L83 is i~5909 at LC6_A1
+--operation mode is normal
+
+A1L83 = A1L43 & A1L53 & A1L62 & A1L73;
+
+
+--reduce_nor_105 is reduce_nor_105 at LC3_A7
+--operation mode is normal
+
+reduce_nor_105 = timer_counter0[2] # timer_counter0[0] # !timer_counter0[1] # !timer_counter0[3];
+
+
+--reduce_nor_96 is reduce_nor_96 at LC4_A7
+--operation mode is normal
+
+reduce_nor_96 = !timer_counter0[1] # !timer_counter0[3] # !timer_counter0[0] # !timer_counter0[2];
+
+
+--A1L13 is i~5851 at LC2_A7
+--operation mode is normal
+
+A1L13 = reduce_nor_96 & reduce_nor_105;
+
+
+--timer_clk0 is timer_clk0 at LC1_B16
+--operation mode is normal
+
+timer_clk0_lut_out = !D1_q[0] & !D1_q[1] & !D1_q[2] & !A1L47;
+timer_clk0 = DFFEA(timer_clk0_lut_out, GLOBAL(clk), , , , , );
+
+
+--is_run is is_run at LC7_A1
+--operation mode is normal
+
+is_run_lut_out = A1L83 & !A1L63 & (sw_pulse_run $ is_run) # !A1L83 & (sw_pulse_run $ is_run);
+is_run = DFFEA(is_run_lut_out, !GLOBAL(clk), , , , , );
+
+
+--A1L7 is i~32 at LC1_A1
+--operation mode is normal
+
+A1L7 = is_run & timer_clk0;
+
+
+--timer_clk2 is timer_clk2 at LC3_A6
+--operation mode is normal
+
+timer_clk2_lut_out = timer_counter1[2] & timer_counter1[0] & timer_counter1[3] & timer_counter1[1];
+timer_clk2 = DFFEA(timer_clk2_lut_out, GLOBAL(clk), , , , , );
+
+
+--sw_pulse0 is sw_pulse0 at LC2_A18
+--operation mode is normal
+
+sw_pulse0_lut_out = !sw_latch0 & (sw_pulse0 # !sw_node0);
+sw_pulse0 = DFFEA(sw_pulse0_lut_out, GLOBAL(clk), , , , , );
+
+
+--A1L41 is i~755 at LC1_A4
+--operation mode is normal
+
+A1L41 = timer_counter2[1] $ (timer_counter2[0] & sw_pulse0 # !timer_counter2[0] & !sw_pulse0 & timer_clk2);
+
+
+--A1L08 is reduce_nor_178~2 at LC6_A3
+--operation mode is normal
+
+A1L08 = timer_counter2[2] # timer_counter2[0] # !timer_counter2[1] # !timer_counter2[3];
+
+
+--reduce_nor_169 is reduce_nor_169 at LC8_A3
+--operation mode is normal
+
+reduce_nor_169 = !timer_counter2[3] # !timer_counter2[2] # !timer_counter2[1] # !timer_counter2[0];
+
+
+--A1L38 is reduce_nor_256~3 at LC5_A2
+--operation mode is normal
+
+A1L38 = timer_counter4[0] # timer_counter4[2] # !timer_counter4[3] # !timer_counter4[1];
+
+
+--A1L52 is i~5844 at LC7_A2
+--operation mode is normal
+
+A1L52 = timer_counter4[0] & timer_counter4[1] & timer_counter4[2];
+
+
+--timer_clk4 is timer_clk4 at LC6_A5
+--operation mode is normal
+
+timer_clk4_lut_out = timer_counter3[0] & timer_counter3[1] & timer_counter3[2] & timer_counter3[3];
+timer_clk4 = DFFEA(timer_clk4_lut_out, GLOBAL(clk), , , , , );
+
+
+--sw_pulse2 is sw_pulse2 at LC1_A24
+--operation mode is normal
+
+sw_pulse2_lut_out = !sw_latch2 & (sw_pulse2 # !sw_node2);
+sw_pulse2 = DFFEA(sw_pulse2_lut_out, GLOBAL(clk), , , , , );
+
+
+--A1L93 is i~5943 at LC8_A2
+--operation mode is normal
+
+A1L93 = sw_pulse2 & A1L52 # !sw_pulse2 & timer_clk4 & A1L22;
+
+
+--A1L72 is i~5846 at LC5_A9
+--operation mode is normal
+
+A1L72 = !timer_counter4[0] & !timer_counter4[1] & !timer_counter4[2];
+
+
+--A1L42 is i~5842 at LC2_A9
+--operation mode is normal
+
+A1L42 = !sw_pulse2 & timer_clk4 & A1L72;
+
+
+--A1L51 is i~760 at LC6_A9
+--operation mode is normal
+
+A1L51 = timer_counter4[2] $ (timer_clk4 & !timer_counter4[0] & !timer_counter4[1]);
+
+
+--A1L4 is add_232~59 at LC7_A9
+--operation mode is normal
+
+A1L4 = timer_counter4[0] & timer_counter4[1];
+
+
+--A1L61 is i~765 at LC1_A9
+--operation mode is normal
+
+A1L61 = sw_pulse2 & (A1L4 $ timer_counter4[2]) # !sw_pulse2 & A1L51;
+
+
+--A1L71 is i~775 at LC4_A9
+--operation mode is normal
+
+A1L71 = timer_counter4[1] $ (timer_counter4[0] & sw_pulse2 # !timer_counter4[0] & !sw_pulse2 & timer_clk4);
+
+
+--A1L04 is i~5947 at LC3_A9
+--operation mode is normal
+
+A1L04 = timer_counter4[0] $ (timer_clk4 # sw_pulse2);
+
+
+--reduce_nor_217 is reduce_nor_217 at LC4_A5
+--operation mode is normal
+
+reduce_nor_217 = timer_counter3[0] # timer_counter3[3] # !timer_counter3[2] # !timer_counter3[1];
+
+
+--reduce_nor_208 is reduce_nor_208 at LC5_A8
+--operation mode is normal
+
+reduce_nor_208 = !timer_counter3[3] # !timer_counter3[2] # !timer_counter3[1] # !timer_counter3[0];
+
+
+--A1L23 is i~5854 at LC3_A8
+--operation mode is normal
+
+A1L23 = reduce_nor_208 & reduce_nor_217;
+
+
+--A1L3 is add_199~15 at LC2_A5
+--operation mode is normal
+
+A1L3 = timer_counter3[3] $ (timer_counter3[0] & timer_counter3[1] & timer_counter3[2]);
+
+
+--A1L2 is add_193~11 at LC3_A5
+--operation mode is normal
+
+A1L2 = timer_counter3[0] # timer_counter3[1];
+
+
+--timer_clk3 is timer_clk3 at LC2_A13
+--operation mode is normal
+
+timer_clk3_lut_out = timer_counter2[0] & timer_counter2[1] & timer_counter2[2] & timer_counter2[3];
+timer_clk3 = DFFEA(timer_clk3_lut_out, GLOBAL(clk), , , , , );
+
+
+--A1L81 is i~780 at LC7_A5
+--operation mode is normal
+
+A1L81 = timer_counter3[3] $ (timer_clk3 & !A1L2 & !timer_counter3[2]);
+
+
+--sw_pulse1 is sw_pulse1 at LC8_A14
+--operation mode is normal
+
+sw_pulse1_lut_out = !sw_latch1 & (sw_pulse1 # !sw_node1);
+sw_pulse1 = DFFEA(sw_pulse1_lut_out, GLOBAL(clk), , , , , );
+
+
+--A1L01 is i~667 at LC4_A8
+--operation mode is normal
+
+A1L01 = timer_counter3[0] $ (timer_clk3 # sw_pulse1) # !reduce_nor_208;
+
+
+--A1L9 is i~654 at LC6_A8
+--operation mode is normal
+
+A1L9 = !sw_pulse1 & (timer_counter3[2] $ (timer_clk3 & !A1L2));
+
+
+--A1L8 is i~653 at LC7_A8
+--operation mode is normal
+
+A1L8 = sw_pulse1 & (timer_counter3[2] $ (timer_counter3[0] & timer_counter3[1]));
+
+
+--A1L91 is i~795 at LC8_A8
+--operation mode is normal
+
+A1L91 = timer_counter3[1] $ (timer_counter3[0] & sw_pulse1 # !timer_counter3[0] & !sw_pulse1 & timer_clk3);
+
+
+--A1L11 is i~675 at LC5_A4
+--operation mode is normal
+
+A1L11 = timer_counter2[0] $ (timer_clk2 # sw_pulse0) # !reduce_nor_169;
+
+
+--A1L82 is i~5847 at LC7_A7
+--operation mode is normal
+
+A1L82 = !timer_counter0[0] & !timer_counter0[1];
+
+
+--A1L03 is i~5850 at LC5_A3
+--operation mode is normal
+
+A1L03 = reduce_nor_169 & A1L08;
+
+
+--A1L1 is add_160~10 at LC6_A4
+--operation mode is normal
+
+A1L1 = timer_counter2[2] $ (timer_counter2[0] & timer_counter2[1]);
+
+
+--A1L02 is i~800 at LC7_A4
+--operation mode is normal
+
+A1L02 = timer_counter2[2] $ (timer_clk2 & !timer_counter2[0] & !timer_counter2[1]);
+
+
+--A1L21 is i~713 at LC8_A1
+--operation mode is normal
+
+A1L21 = timer_counter0[3] $ (A1L43 & A1L7) # !reduce_nor_96;
+
+
+--A1L12 is i~4191 at LC3_A3
+--operation mode is normal
+
+A1L12 = timer_counter2[0] & timer_counter2[1] & timer_counter2[2] & sw_pulse0;
+
+
+--A1L32 is i~5841 at LC4_A3
+--operation mode is normal
+
+A1L32 = !sw_pulse0 & timer_clk2 & A1L62;
+
+
+--reduce_nor_139 is reduce_nor_139 at LC5_A6
+--operation mode is normal
+
+reduce_nor_139 = timer_counter1[2] # timer_counter1[0] # !timer_counter1[1] # !timer_counter1[3];
+
+
+--reduce_nor_130 is reduce_nor_130 at LC2_A6
+--operation mode is normal
+
+reduce_nor_130 = !timer_counter1[1] # !timer_counter1[3] # !timer_counter1[0] # !timer_counter1[2];
+
+
+--A1L33 is i~5855 at LC1_A10
+--operation mode is normal
+
+A1L33 = reduce_nor_130 & reduce_nor_139;
+
+
+--timer_clk1 is timer_clk1 at LC5_A13
+--operation mode is normal
+
+timer_clk1_lut_out = timer_counter0[2] & timer_counter0[0] & timer_counter0[3] & timer_counter0[1];
+timer_clk1 = DFFEA(timer_clk1_lut_out, GLOBAL(clk), , , , , );
+
+
+--A1L92 is i~5848 at LC8_A6
+--operation mode is normal
+
+A1L92 = !timer_counter1[0] & !timer_counter1[1];
+
+
+--A1L31 is i~742 at LC7_A3
+--operation mode is normal
+
+A1L31 = timer_counter1[3] $ (A1L53 & timer_clk1) # !reduce_nor_130;
+
+
+--A1L07 is reduce_nor_24~17 at LC8_B20
+--operation mode is normal
+
+A1L07 = D1_q[15] # D1_q[17] # !D1_q[18] # !D1_q[16];
+
+
+--A1L17 is reduce_nor_24~22 at LC1_B22
+--operation mode is normal
+
+A1L17 = D1_q[12] # D1_q[13] # D1_q[14] # !D1_q[11];
+
+
+--A1L27 is reduce_nor_24~31 at LC1_B19
+--operation mode is normal
+
+A1L27 = D1_q[7] # D1_q[9] # D1_q[10] # !D1_q[8];
+
+
+--A1L37 is reduce_nor_24~44 at LC2_B16
+--operation mode is normal
+
+A1L37 = D1_q[3] # D1_q[5] # D1_q[6] # !D1_q[4];
+
+
+--A1L47 is reduce_nor_24~87 at LC7_B20
+--operation mode is normal
+
+A1L47 = A1L37 # A1L27 # A1L17 # A1L07;
+
+
+--reduce_nor_24 is reduce_nor_24 at LC6_B20
+--operation mode is normal
+
+reduce_nor_24 = D1_q[0] # D1_q[1] # D1_q[2] # A1L47;
+
+
+--sw_pulse_run is sw_pulse_run at LC1_A15
+--operation mode is normal
+
+sw_pulse_run_lut_out = !sw_latch_run & (sw_pulse_run # !sw_node_run);
+sw_pulse_run = DFFEA(sw_pulse_run_lut_out, GLOBAL(clk), , , , , );
+
+
+--sw_node0 is sw_node0 at LC1_A18
+--operation mode is normal
+
+sw_node0_lut_out = sw_in0;
+sw_node0 = DFFEA(sw_node0_lut_out, GLOBAL(D1_q[14]), , , , , );
+
+
+--sw_latch0 is sw_latch0 at LC3_A18
+--operation mode is normal
+
+sw_latch0_lut_out = !sw_node0;
+sw_latch0 = DFFEA(sw_latch0_lut_out, GLOBAL(clk), , , , , );
+
+
+--sw_node2 is sw_node2 at LC2_A24
+--operation mode is normal
+
+sw_node2_lut_out = sw_in2;
+sw_node2 = DFFEA(sw_node2_lut_out, GLOBAL(D1_q[14]), , , , , );
+
+
+--sw_latch2 is sw_latch2 at LC3_A24
+--operation mode is normal
+
+sw_latch2_lut_out = !sw_node2;
+sw_latch2 = DFFEA(sw_latch2_lut_out, GLOBAL(clk), , , , , );
+
+
+--sw_node1 is sw_node1 at LC1_A14
+--operation mode is normal
+
+sw_node1_lut_out = sw_in1;
+sw_node1 = DFFEA(sw_node1_lut_out, GLOBAL(D1_q[14]), , , , , );
+
+
+--sw_latch1 is sw_latch1 at LC2_A14
+--operation mode is normal
+
+sw_latch1_lut_out = !sw_node1;
+sw_latch1 = DFFEA(sw_latch1_lut_out, GLOBAL(clk), , , , , );
+
+
+--sw_node_run is sw_node_run at LC2_A15
+--operation mode is normal
+
+sw_node_run_lut_out = sw_in_run;
+sw_node_run = DFFEA(sw_node_run_lut_out, GLOBAL(D1_q[14]), , , , , );
+
+
+--sw_latch_run is sw_latch_run at LC3_A15
+--operation mode is normal
+
+sw_latch_run_lut_out = !sw_node_run;
+sw_latch_run = DFFEA(sw_latch_run_lut_out, GLOBAL(clk), , , , , );
+
+
+--C1L4 is led:segled_0|Mux_7_rtl_4~8 at LC1_C21
+--operation mode is normal
+
+C1L4 = timer_out0[1] & (timer_out0[2] & timer_out0[0] # !timer_out0[2] & timer_out0[3] & !timer_out0[0]) # !timer_out0[1] & !timer_out0[3] & (timer_out0[2] $ timer_out0[0]);
+
+
+--C2L4 is led:segled_1|Mux_7_rtl_4~8 at LC7_A23
+--operation mode is normal
+
+C2L4 = timer_out1[1] & (timer_out1[2] & timer_out1[0] # !timer_out1[2] & timer_out1[3] & !timer_out1[0]) # !timer_out1[1] & !timer_out1[3] & (timer_out1[2] $ timer_out1[0]);
+
+
+--C3L4 is led:segled_2|Mux_7_rtl_4~8 at LC5_A16
+--operation mode is normal
+
+C3L4 = timer_out2[1] & (timer_out2[2] & timer_out2[0] # !timer_out2[2] & timer_out2[3] & !timer_out2[0]) # !timer_out2[1] & !timer_out2[3] & (timer_out2[2] $ timer_out2[0]);
+
+
+--C1L1 is led:segled_0|Mux_4_rtl_4~10 at LC2_C6
+--operation mode is normal
+
+C1L1 = timer_out0[2] & !timer_out0[1] & (timer_out0[3] # !timer_out0[0]) # !timer_out0[2] & timer_out0[0] & (timer_out0[3] $ !timer_out0[1]);
+
+
+--C1L3 is led:segled_0|Mux_6_rtl_4~52 at LC2_C10
+--operation mode is normal
+
+C1L3 = timer_out0[3] & timer_out0[2] & (timer_out0[1] # !timer_out0[0]) # !timer_out0[3] & !timer_out0[2] & !timer_out0[0] & timer_out0[1];
+
+
+--C2L1 is led:segled_1|Mux_4_rtl_4~10 at LC5_A23
+--operation mode is normal
+
+C2L1 = timer_out1[2] & !timer_out1[1] & (timer_out1[3] # !timer_out1[0]) # !timer_out1[2] & timer_out1[0] & (timer_out1[3] $ !timer_out1[1]);
+
+
+--C2L3 is led:segled_1|Mux_6_rtl_4~52 at LC2_A23
+--operation mode is normal
+
+C2L3 = timer_out1[3] & timer_out1[2] & (timer_out1[1] # !timer_out1[0]) # !timer_out1[3] & !timer_out1[2] & !timer_out1[0] & timer_out1[1];
+
+
+--C3L1 is led:segled_2|Mux_4_rtl_4~10 at LC1_A22
+--operation mode is normal
+
+C3L1 = timer_out2[2] & !timer_out2[1] & (timer_out2[3] # !timer_out2[0]) # !timer_out2[2] & timer_out2[0] & (timer_out2[3] $ !timer_out2[1]);
+
+
+--C3L3 is led:segled_2|Mux_6_rtl_4~52 at LC1_A16
+--operation mode is normal
+
+C3L3 = timer_out2[3] & timer_out2[2] & (timer_out2[1] # !timer_out2[0]) # !timer_out2[3] & !timer_out2[2] & !timer_out2[0] & timer_out2[1];
+
+
+--clk is clk at Pin_39
+--operation mode is input
+
+clk = INPUT();
+
+
+--sw_in0 is sw_in0 at Pin_34
+--operation mode is input
+
+sw_in0 = INPUT();
+
+
+--sw_in2 is sw_in2 at Pin_32
+--operation mode is input
+
+sw_in2 = INPUT();
+
+
+--sw_in1 is sw_in1 at Pin_33
+--operation mode is input
+
+sw_in1 = INPUT();
+
+
+--sw_in_run is sw_in_run at Pin_31
+--operation mode is input
+
+sw_in_run = INPUT();
+
+
+--led_out0[7] is led_out0[7] at Pin_84
+--operation mode is output
+
+led_out0[7] = OUTPUT(C1L1);
+
+
+--led_out0[6] is led_out0[6] at Pin_85
+--operation mode is output
+
+led_out0[6] = OUTPUT(C1L2);
+
+
+--led_out0[5] is led_out0[5] at Pin_86
+--operation mode is output
+
+led_out0[5] = OUTPUT(C1L3);
+
+
+--led_out0[4] is led_out0[4] at Pin_96
+--operation mode is output
+
+led_out0[4] = OUTPUT(C1L4);
+
+
+--led_out0[3] is led_out0[3] at Pin_93
+--operation mode is output
+
+led_out0[3] = OUTPUT(C1L5);
+
+
+--led_out0[2] is led_out0[2] at Pin_87
+--operation mode is output
+
+led_out0[2] = OUTPUT(C1L6);
+
+
+--led_out0[1] is led_out0[1] at Pin_81
+--operation mode is output
+
+led_out0[1] = OUTPUT(A1L48);
+
+
+--led_out0[0] is led_out0[0] at Pin_94
+--operation mode is output
+
+led_out0[0] = OUTPUT(VCC);
+
+
+--led_out1[7] is led_out1[7] at Pin_97
+--operation mode is output
+
+led_out1[7] = OUTPUT(C2L1);
+
+
+--led_out1[6] is led_out1[6] at Pin_98
+--operation mode is output
+
+led_out1[6] = OUTPUT(C2L2);
+
+
+--led_out1[5] is led_out1[5] at Pin_6
+--operation mode is output
+
+led_out1[5] = OUTPUT(C2L3);
+
+
+--led_out1[4] is led_out1[4] at Pin_9
+--operation mode is output
+
+led_out1[4] = OUTPUT(C2L4);
+
+
+--led_out1[3] is led_out1[3] at Pin_7
+--operation mode is output
+
+led_out1[3] = OUTPUT(C2L5);
+
+
+--led_out1[2] is led_out1[2] at Pin_99
+--operation mode is output
+
+led_out1[2] = OUTPUT(C2L6);
+
+
+--led_out1[1] is led_out1[1] at Pin_5
+--operation mode is output
+
+led_out1[1] = OUTPUT(A1L58);
+
+
+--led_out1[0] is led_out1[0] at Pin_8
+--operation mode is output
+
+led_out1[0] = OUTPUT(VCC);
+
+
+--led_out2[7] is led_out2[7] at Pin_13
+--operation mode is output
+
+led_out2[7] = OUTPUT(C3L1);
+
+
+--led_out2[6] is led_out2[6] at Pin_14
+--operation mode is output
+
+led_out2[6] = OUTPUT(C3L2);
+
+
+--led_out2[5] is led_out2[5] at Pin_19
+--operation mode is output
+
+led_out2[5] = OUTPUT(C3L3);
+
+
+--led_out2[4] is led_out2[4] at Pin_22
+--operation mode is output
+
+led_out2[4] = OUTPUT(C3L4);
+
+
+--led_out2[3] is led_out2[3] at Pin_20
+--operation mode is output
+
+led_out2[3] = OUTPUT(C3L5);
+
+
+--led_out2[2] is led_out2[2] at Pin_15
+--operation mode is output
+
+led_out2[2] = OUTPUT(C3L6);
+
+
+--led_out2[1] is led_out2[1] at Pin_16
+--operation mode is output
+
+led_out2[1] = OUTPUT(A1L68);
+
+
+--led_out2[0] is led_out2[0] at Pin_21
+--operation mode is output
+
+led_out2[0] = OUTPUT(GND);
+
+
+--speaker_out is speaker_out at Pin_69
+--operation mode is output
+
+speaker_out = OUTPUT(A1L88Q);
+
+

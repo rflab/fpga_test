@@ -1,0 +1,1341 @@
+RamenTimer - Quartus II Compilation Report File
+-------------------------------------------------------------------------------
+
++---------------------------------------------------------------------+
+| Report Information                                                  |
++--------------------+------------------------------------------------+
+| Project            | D:\circuit\ramentimer/                         |
+| Compiler Settings  | RamenTimer                                     |
+| Quartus II Version | 2.2 Build 191 03/31/2003 SP 2 SJ Web Edition   |
++--------------------+------------------------------------------------+
+
+Table of Contents
+    Compilation Report
+        Legal Notice
+        Project Settings
+            General Settings
+        Results for "RamenTimer" Compiler Settings
+            Summary
+            Compiler Settings
+            Messages
+            Hierarchy
+            Logic Options
+            Synthesis Section
+                Resource Utilization by Entity
+            Device Options
+            Floorplan View
+            Resource Section
+                Input Pins
+                Output Pins
+                All Package Pins
+                Control Signals
+                Global & Other Fast Signals
+                Carry Chains
+                Non-Global High Fan-Out Signals
+                Peripheral Signals
+                LAB
+                Local Routing Interconnect
+                LAB External Interconnect
+                Row Interconnect
+                LAB Column Interconnect
+                EAB Column Interconnect
+                Resource Usage Summary
+                Resource Utilization by Entity
+                Delay Chain Summary
+            Equations
+            Pin-Out File
+            Timing Analyses
+                Timing Settings
+                fmax (not incl. delays to/from pins)
+                Register-to-Register fmax
+                tsu (Input Setup Times)
+                th (Input Hold Times)
+                tco (Clock to Output Delays)
+            Processing Time
+
++-----------------------------------------------------------------------------+
+| Legal Notice                                                                |
++-----------------------------------------------------------------------------+
+Copyright (C) 1991-2003 Altera Corporation
+Any  megafunction  design,  and related netlist (encrypted  or  decrypted),
+support information,  device programming or simulation file,  and any other
+associated  documentation or information  provided by  Altera  or a partner
+under  Altera's   Megafunction   Partnership   Program  may  be  used  only
+to program  PLD  devices (but not masked  PLD  devices) from  Altera.   Any
+other  use  of such  megafunction  design,  netlist,  support  information,
+device programming or simulation file,  or any other  related documentation
+or information  is prohibited  for  any  other purpose,  including, but not
+limited to  modification,  reverse engineering,  de-compiling, or use  with
+any other  silicon devices,  unless such use is  explicitly  licensed under
+a separate agreement with  Altera  or a megafunction partner.  Title to the
+intellectual property,  including patents,  copyrights,  trademarks,  trade
+secrets,  or maskworks,  embodied in any such megafunction design, netlist,
+support  information,  device programming or simulation file,  or any other
+related documentation or information provided by  Altera  or a megafunction
+partner, remains with Altera, the megafunction partner, or their respective
+licensors. No other licenses, including any licenses needed under any third
+party's intellectual property, are provided herein.
+
+
++-----------------------------------------------------------------------------+
+| General Settings                                                            |
++-----------------------------------------------------------------------------+
++-------------------+---------------------+
+| Option            | Setting             |
++-------------------+---------------------+
+| Start date & time | 05/17/2008 12:26:28 |
+| Main task         | Compilation         |
+| Settings name     | RamenTimer          |
++-------------------+---------------------+
+
++-----------------------------------------------------------------------------+
+| Summary                                                                     |
++-----------------------------------------------------------------------------+
++-------------------------------------+-----------------------------------------------+
+| Processing status                   | Fitting Successful - Sat May 17 12:26:43 2008 |
+| Timing requirements/analysis status | No requirements                               |
+| Chip name                           | RamenTimer                                    |
+| Device for compilation              | EP1K10TC100-3                                 |
+| Total logic elements                | 145 / 576 ( 25 % )                            |
+| Total pins                          | 30 / 66 ( 45 % )                              |
+| Total memory bits                   | 0 / 12,288 ( 0 % )                            |
+| Total PLLs                          | 0 / 1 ( 0 % )                                 |
+| Device for timing analysis          | EP1K10TC100-3                                 |
++-------------------------------------+-----------------------------------------------+
+
++-----------------------------------------------------------------------------+
+| Compiler Settings                                                           |
++-----------------------------------------------------------------------------+
++----------------------------------------------------------+--------------------+
+| Option                                                   | Setting            |
++----------------------------------------------------------+--------------------+
+| Chip name                                                | RamenTimer         |
+| Family name                                              | ACEX1K             |
+| Focus entity name                                        | |RamenTimer        |
+| Device                                                   | EP1K10TC100-3      |
+| Disk space/compilation speed tradeoff                    | Normal             |
+| Preserve fewer node names                                | On                 |
+| Optimize timing                                          | Normal Compilation |
+| Optimize IOC register placement for timing               | On                 |
+| Fast Fit compilation                                     | Off                |
+| Perform WYSIWYG primitive resynthesis                    | Off                |
+| Perform gate-level register retiming                     | Off                |
+| Use Fitter timing information during synthesis           | Off                |
+| Duplicate logic elements during fitting                  | Off                |
+| Duplicate logic elements/resythesize LUTs during fitting | Off                |
+| SignalProbe compilation                                  | Off                |
+| Generate compressed bitstreams                           | Off                |
++----------------------------------------------------------+--------------------+
+
++-----------------------------------------------------------------------------+
+| Messages                                                                    |
++-----------------------------------------------------------------------------+
+Info: Found 2 design units and 1 entities in source file D:\circuit\ramentimer\led.vhd
+  Info: Found design unit 1: led-rtl
+  Info: Found entity 1: led
+Info: Found 2 design units and 1 entities in source file D:\circuit\ramentimer\timer.vhd
+  Info: Found design unit 1: ramentimer-rtl
+  Info: Found entity 1: ramentimer
+Warning: VHDL Signal Declaration warning at timer.vhd(28): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(29): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(30): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(31): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL warning at timer.vhd(33): used initial value for variable dot0 because it was never assigned
+Warning: VHDL warning at timer.vhd(34): used initial value for variable dot1 because it was never assigned
+Warning: VHDL warning at timer.vhd(35): used initial value for variable dot2 because it was never assigned
+Warning: VHDL Signal Declaration warning at timer.vhd(42): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(42): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(42): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(42): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(42): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(48): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(48): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(48): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(48): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(48): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(52): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(52): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(52): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(57): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(57): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(57): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(57): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(62): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(62): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(62): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(62): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(67): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(67): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(67): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Signal Declaration warning at timer.vhd(67): ignored initial value specified for signal in Signal Declaration
+Warning: VHDL Process Statement warning at timer.vhd(330): signal timer_counter4 is in sequential statement, but is not in sensitivity list
+Warning: VHDL Process Statement warning at timer.vhd(330): signal timer_counter3 is in sequential statement, but is not in sensitivity list
+Info: VHDL Case Statement information at led.vhd(57): OTHERS choice is never selected
+Info: Found 1 design units and 1 entities in source file C:\Program Files\quartus\libraries\megafunctions\lpm_counter.tdf
+  Info: Found entity 1: lpm_counter
+Info: Found 1 design units and 1 entities in source file C:\Program Files\quartus\libraries\megafunctions\alt_counter_f10ke.tdf
+  Info: Found entity 1: alt_counter_f10ke
+Warning: Output pins are stuck at VCC or GND
+  Warning: Pin led_out0[0] stuck at VCC
+  Warning: Pin led_out1[0] stuck at VCC
+  Warning: Pin led_out2[0] stuck at GND
+Info: Implemented 175 device resources
+  Info: Implemented 5 input pins
+  Info: Implemented 25 output pins
+  Info: Implemented 145 logic cells
+Info: Selected device EP1K10TC100-3 for design RamenTimer
+Warning: Feature Device Migration is not available with your current license
+Warning: Feature SignalProbe is not available with your current license
+Warning: Following nodes are assigned to locations or regions, but do not exist in design
+  Warning: Node led_out[0] is assigned to location or region, but does not exist in design
+  Warning: Node led_out[1] is assigned to location or region, but does not exist in design
+  Warning: Node led_out[2] is assigned to location or region, but does not exist in design
+  Warning: Node led_out[3] is assigned to location or region, but does not exist in design
+  Warning: Node led_out[4] is assigned to location or region, but does not exist in design
+  Warning: Node led_out[5] is assigned to location or region, but does not exist in design
+  Warning: Node led_out[6] is assigned to location or region, but does not exist in design
+  Warning: Node led_out[7] is assigned to location or region, but does not exist in design
+  Warning: Node sw_in is assigned to location or region, but does not exist in design
+Info: Inserted 0 logic cells in first fitting attempt
+Info: Started  fitting attempt 1 on Sat May 17 2008 at 12:26:39
+Warning: Found pins functioning as undefined clocks and/or memory enables
+  Info: Assuming node clk is an undefined clock
+
++-----------------------------------------------------------------------------+
+| Hierarchy                                                                   |
++-----------------------------------------------------------------------------+
+Hierarchy
+  RamenTimer
+    lpm_counter:clk_counter_rtl_0
+      alt_counter_f10ke:wysi_counter
+    led:segled_0
+    led:segled_1
+    led:segled_2
+
++-----------------------------------------------------------------------------+
+| Logic Options                                                               |
++-----------------------------------------------------------------------------+
++-------------------------------------------------+-------+
+| Name                                            | Value |
++-------------------------------------------------+-------+
+| Optimization Technique -- FLEX 10K/10KE/ACEX 1K | Area  |
+| Power-Up Don't Care                             | On    |
++-------------------------------------------------+-------+
+
++-----------------------------------------------------------------------------+
+| Resource Utilization by Entity                                              |
++-----------------------------------------------------------------------------+
++----------------------------------------+-------------+-----------+-------------+------+--------------+-------------------+------------------+--------------------------------------------------------------------------+
+| Compilation Hierarchy Node             | Logic Cells | Registers | Memory Bits | Pins | LUT-Only LCs | Register-Only LCs | LUT/Register LCs | Full Hierarchy Name                                                      |
++----------------------------------------+-------------+-----------+-------------+------+--------------+-------------------+------------------+--------------------------------------------------------------------------+
+| |RamenTimer                            | 145 (108)   | 70        | 0           | 30   | 75 (57)      | 8 (8)             | 62 (43)          | |RamenTimer                                                              |
+|    |led:segled_0|                      | 6 (6)       | 0         | 0           | 0    | 6 (6)        | 0 (0)             | 0 (0)            | |RamenTimer|led:segled_0                                                 |
+|    |led:segled_1|                      | 6 (6)       | 0         | 0           | 0    | 6 (6)        | 0 (0)             | 0 (0)            | |RamenTimer|led:segled_1                                                 |
+|    |led:segled_2|                      | 6 (6)       | 0         | 0           | 0    | 6 (6)        | 0 (0)             | 0 (0)            | |RamenTimer|led:segled_2                                                 |
+|    |lpm_counter:clk_counter_rtl_0|     | 19 (0)      | 19        | 0           | 0    | 0 (0)        | 0 (0)             | 19 (0)           | |RamenTimer|lpm_counter:clk_counter_rtl_0                                |
+|       |alt_counter_f10ke:wysi_counter| | 19 (19)     | 19        | 0           | 0    | 0 (0)        | 0 (0)             | 19 (19)          | |RamenTimer|lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter |
++----------------------------------------+-------------+-----------+-------------+------+--------------+-------------------+------------------+--------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------------+
+| Device Options                                                              |
++-----------------------------------------------------------------------------+
++------------------------------------------------------------------+---------------------+
+| Option                                                           | Setting             |
++------------------------------------------------------------------+---------------------+
+| Auto-restart configuration after error                           | Off                 |
+| Release clears before tri-states                                 | Off                 |
+| Enable user-supplied start-up clock (CLKUSR)                     | Off                 |
+| Enable device-wide reset (DEV_CLRn)                              | Off                 |
+| Enable device-wide output enable (DEV_OE)                        | Off                 |
+| Enable INIT_DONE output                                          | Off                 |
+| Auto-increment JTAG user code for multiple configuration devices | On                  |
+| Disable CONF_DONE and nSTATUS pull-ups on configuration device   | Off                 |
+| Generate compressed bitstreams                                   | Off                 |
+| Generate Tabular Text File (.ttf)                                | Off                 |
+| Generate Raw Binary File (.rbf)                                  | Off                 |
+| Generate Hexadecimal Output File (.hexout)                       | Off                 |
+| Configuration scheme                                             | Passive Serial      |
+| Hexadecimal Output File count direction                          | Up                  |
+| Hexadecimal Output File start address                            | 0                   |
+| Reserve all unused pins                                          | As input tri-stated |
+| Configuration device                                             | EPC2                |
+| Base pin-out file on sameframe device                            | Off                 |
+| Auto user code                                                   | Off                 |
+| Configuration device auto user code                              | Off                 |
+| JTAG user code for target device                                 | 0X7F                |
+| JTAG user code for configuration device                          | 0XFFFFFFFF          |
++------------------------------------------------------------------+---------------------+
+
++-----------------------------------------------------------------------------+
+| Floorplan View                                                              |
++-----------------------------------------------------------------------------+
+Floorplan report data cannot be output to ASCII.
+Please use Quartus II to view the floorplan report data.
+
++-----------------------------------------------------------------------------+
+| Input Pins                                                                  |
++-----------------------------------------------------------------------------+
++-----------+-------+-----+------+---------+--------+--------------+-------------------------+---------------+-----------------+---------------+--------------+
+| Name      | Pin # | Row | Col. | Fan-Out | Global | I/O Register | Use Local Routing Input | Power Up High | PCI I/O Enabled | Single-Pin CE | I/O Standard |
++-----------+-------+-----+------+---------+--------+--------------+-------------------------+---------------+-----------------+---------------+--------------+
+| clk       | 39    | --  | --   | 66      | yes    | no           | no                      | no            | no              | no            | LVTTL/LVCMOS |
+| sw_in0    | 34    | --  | 14   | 1       | no     | no           | no                      | no            | no              | no            | LVTTL/LVCMOS |
+| sw_in2    | 32    | --  | 16   | 1       | no     | no           | no                      | no            | no              | no            | LVTTL/LVCMOS |
+| sw_in1    | 33    | --  | 15   | 1       | no     | no           | no                      | no            | no              | no            | LVTTL/LVCMOS |
+| sw_in_run | 31    | --  | 17   | 1       | no     | no           | no                      | no            | no              | no            | LVTTL/LVCMOS |
++-----------+-------+-----+------+---------+--------+--------------+-------------------------+---------------+-----------------+---------------+--------------+
+
++-----------------------------------------------------------------------------+
+| Output Pins                                                                 |
++-----------------------------------------------------------------------------+
++-------------+-------+-----+------+--------------+--------------------------+---------------+----------------+-----------------+---------------+---------------+------------+--------------+
+| Name        | Pin # | Row | Col. | I/O Register | Use Local Routing Output | Power Up High | Slow Slew Rate | PCI I/O Enabled | Single-Pin OE | Single-Pin CE | Open Drain | I/O Standard |
++-------------+-------+-----+------+--------------+--------------------------+---------------+----------------+-----------------+---------------+---------------+------------+--------------+
+| led_out0[7] | 84    | --  | 5    | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out0[6] | 85    | --  | 8    | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out0[5] | 86    | --  | 9    | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out0[4] | 96    | --  | 22   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out0[3] | 93    | --  | 13   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out0[2] | 87    | --  | 12   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out0[1] | 81    | --  | 3    | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out1[7] | 97    | --  | 23   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out1[6] | 98    | --  | 24   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out1[5] | 6     |  A  | --   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out1[4] | 9     |  A  | --   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out1[3] | 7     |  A  | --   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out1[2] | 99    | --  | 24   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out1[1] | 5     |  A  | --   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out2[7] | 13    |  B  | --   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out2[6] | 14    |  B  | --   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out2[5] | 19    |  C  | --   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out2[4] | 22    |  C  | --   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out2[3] | 20    |  C  | --   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out2[2] | 15    |  B  | --   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out2[1] | 16    |  B  | --   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| speaker_out | 69    |  A  | --   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out0[0] | 94    | --  | 19   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out1[0] | 8     |  A  | --   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
+| led_out2[0] | 21    |  C  | --   | no           | no                       | no            | no             | no              | no            | no            | no         | LVTTL/LVCMOS |
++-------------+-------+-----+------+--------------+--------------------------+---------------+----------------+-----------------+---------------+---------------+------------+--------------+
+
++-----------------------------------------------------------------------------+
+| All Package Pins                                                            |
++-----------------------------------------------------------------------------+
++-------+----------------+--------------+
+| Pin # | Usage          | I/O Standard |
++-------+----------------+--------------+
+| 1     | ^CONF_DONE     |              |
+| 2     | ^nCEO          |              |
+| 3     | #TDO           |              |
+| 4     | VCC_IO         |              |
+| 5     | led_out1[1]    | LVTTL/LVCMOS |
+| 6     | led_out1[5]    | LVTTL/LVCMOS |
+| 7     | led_out1[3]    | LVTTL/LVCMOS |
+| 8     | led_out1[0]    | LVTTL/LVCMOS |
+| 9     | led_out1[4]    | LVTTL/LVCMOS |
+| 10    | RESERVED_INPUT |              |
+| 11    | GND_INT        |              |
+| 12    | VCC_INT        |              |
+| 13    | led_out2[7]    | LVTTL/LVCMOS |
+| 14    | led_out2[6]    | LVTTL/LVCMOS |
+| 15    | led_out2[2]    | LVTTL/LVCMOS |
+| 16    | led_out2[1]    | LVTTL/LVCMOS |
+| 17    | VCC_IO         |              |
+| 18    | GND_INT        |              |
+| 19    | led_out2[5]    | LVTTL/LVCMOS |
+| 20    | led_out2[3]    | LVTTL/LVCMOS |
+| 21    | led_out2[0]    | LVTTL/LVCMOS |
+| 22    | led_out2[4]    | LVTTL/LVCMOS |
+| 23    | RESERVED_INPUT |              |
+| 24    | #TMS           |              |
+| 25    | ^nSTATUS       |              |
+| 26    | RESERVED_INPUT |              |
+| 27    | RESERVED_INPUT |              |
+| 28    | RESERVED_INPUT |              |
+| 29    | RESERVED_INPUT |              |
+| 30    | RESERVED_INPUT |              |
+| 31    | sw_in_run      | LVTTL/LVCMOS |
+| 32    | sw_in2         | LVTTL/LVCMOS |
+| 33    | sw_in1         | LVTTL/LVCMOS |
+| 34    | sw_in0         | LVTTL/LVCMOS |
+| 35    | VCC_INT        |              |
+| 36    | GND_INT        |              |
+| 37    | VCC_CKLK       |              |
+| 38    | GND+           |              |
+| 39    | clk            | LVTTL/LVCMOS |
+| 40    | GND+           |              |
+| 41    | GND_CKLK       |              |
+| 42    | GND_INT        |              |
+| 43    | RESERVED_INPUT |              |
+| 44    | VCC_IO         |              |
+| 45    | RESERVED_INPUT |              |
+| 46    | RESERVED_INPUT |              |
+| 47    | RESERVED_INPUT |              |
+| 48    | RESERVED_INPUT |              |
+| 49    | RESERVED_INPUT |              |
+| 50    | RESERVED_INPUT |              |
+| 51    | ^nCONFIG       |              |
+| 52    | VCC_INT        |              |
+| 53    | ^MSEL1         |              |
+| 54    | ^MSEL0         |              |
+| 55    | RESERVED_INPUT |              |
+| 56    | RESERVED_INPUT |              |
+| 57    | RESERVED_INPUT |              |
+| 58    | RESERVED_INPUT |              |
+| 59    | GND_INT        |              |
+| 60    | VCC_INT        |              |
+| 61    | RESERVED_INPUT |              |
+| 62    | RESERVED_INPUT |              |
+| 63    | RESERVED_INPUT |              |
+| 64    | RESERVED_INPUT |              |
+| 65    | RESERVED_INPUT |              |
+| 66    | GND_INT        |              |
+| 67    | VCC_IO         |              |
+| 68    | RESERVED_INPUT |              |
+| 69    | speaker_out    | LVTTL/LVCMOS |
+| 70    | RESERVED_INPUT |              |
+| 71    | RESERVED_INPUT |              |
+| 72    | VCC_INT        |              |
+| 73    | #TDI           |              |
+| 74    | ^nCE           |              |
+| 75    | ^DCLK          |              |
+| 76    | ^DATA0         |              |
+| 77    | RESERVED_INPUT |              |
+| 78    | RESERVED_INPUT |              |
+| 79    | RESERVED_INPUT |              |
+| 80    | RESERVED_INPUT |              |
+| 81    | led_out0[1]    | LVTTL/LVCMOS |
+| 82    | RESERVED_INPUT |              |
+| 83    | VCC_IO         |              |
+| 84    | led_out0[7]    | LVTTL/LVCMOS |
+| 85    | led_out0[6]    | LVTTL/LVCMOS |
+| 86    | led_out0[5]    | LVTTL/LVCMOS |
+| 87    | led_out0[2]    | LVTTL/LVCMOS |
+| 88    | GND_INT        |              |
+| 89    | GND+           |              |
+| 90    | GND+           |              |
+| 91    | GND+           |              |
+| 92    | VCC_INT        |              |
+| 93    | led_out0[3]    | LVTTL/LVCMOS |
+| 94    | led_out0[0]    | LVTTL/LVCMOS |
+| 95    | GND_INT        |              |
+| 96    | led_out0[4]    | LVTTL/LVCMOS |
+| 97    | led_out1[7]    | LVTTL/LVCMOS |
+| 98    | led_out1[6]    | LVTTL/LVCMOS |
+| 99    | led_out1[2]    | LVTTL/LVCMOS |
+| 100   | #TCK           |              |
++-------+----------------+--------------+
+
++-----------------------------------------------------------------------------+
+| Control Signals                                                             |
++-----------------------------------------------------------------------------+
++--------------------------------------------------------------------+---------+---------+-------+--------------+
+| Name                                                               | Pin #   | Fan-Out | Usage | Global Usage |
++--------------------------------------------------------------------+---------+---------+-------+--------------+
+| clk                                                                | 39      | 66      | Clock | Pin          |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | LC1_B20 | 5       | Clock | Internal     |
++--------------------------------------------------------------------+---------+---------+-------+--------------+
+
++-----------------------------------------------------------------------------+
+| Global & Other Fast Signals                                                 |
++-----------------------------------------------------------------------------+
++--------------------------------------------------------------------+---------+---------+--------+
+| Name                                                               | Pin #   | Fan-Out | Global |
++--------------------------------------------------------------------+---------+---------+--------+
+| clk                                                                | 39      | 66      | yes    |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | LC1_B20 | 5       | yes    |
++--------------------------------------------------------------------+---------+---------+--------+
+
++-----------------------------------------------------------------------------+
+| Carry Chains                                                                |
++-----------------------------------------------------------------------------+
++--------------------+------------------------+
+| Carry Chain Length | Number of Carry Chains |
++--------------------+------------------------+
+| 0 - 1              | 0                      |
+| 2 - 3              | 0                      |
+| 4 - 5              | 0                      |
+| 6 - 7              | 0                      |
+| 8 - 9              | 0                      |
+| 10 - 11            | 0                      |
+| 12 - 13            | 0                      |
+| 14 - 15            | 0                      |
+| 16 - 17            | 0                      |
+| 18 - 19            | 1                      |
++--------------------+------------------------+
+
++-----------------------------------------------------------------------------+
+| Non-Global High Fan-Out Signals                                             |
++-----------------------------------------------------------------------------+
++-------------------+---------+
+| Name              | Fan-Out |
++-------------------+---------+
+| reduce_nor_24     | 19      |
+| i~5884            | 14      |
+| timer_counter2[0] | 11      |
+| timer_counter2[1] | 10      |
+| timer_counter3[0] | 10      |
+| timer_counter2[2] | 9       |
+| timer_counter3[2] | 9       |
+| timer_counter3[1] | 9       |
+| timer_counter4[0] | 9       |
+| timer_counter1[0] | 8       |
+| timer_counter0[0] | 8       |
+| timer_counter4[1] | 8       |
+| timer_out1[1]     | 7       |
+| timer_out2[2]     | 7       |
+| timer_counter0[1] | 7       |
+| timer_out0[1]     | 7       |
+| timer_out1[2]     | 7       |
+| timer_out2[1]     | 7       |
+| timer_out2[0]     | 7       |
+| timer_out1[3]     | 7       |
+| timer_out1[0]     | 7       |
+| timer_out0[2]     | 7       |
+| timer_out0[3]     | 7       |
+| timer_out2[3]     | 7       |
+| timer_counter2[3] | 7       |
+| timer_counter1[1] | 7       |
+| timer_counter3[3] | 7       |
+| timer_counter4[2] | 7       |
+| timer_out0[0]     | 7       |
+| timer_counter4[3] | 7       |
+| timer_counter0[2] | 6       |
+| sw_pulse1         | 6       |
+| timer_counter0[3] | 6       |
+| timer_counter1[2] | 6       |
+| sw_pulse2         | 6       |
+| sw_pulse0         | 6       |
+| timer_counter1[3] | 6       |
+| timer_clk4        | 5       |
+| reduce_nor_208    | 4       |
+| reduce_nor_217    | 4       |
+| reduce_nor_178~2  | 4       |
+| timer_clk1        | 4       |
+| i~32              | 4       |
+| timer_clk3        | 4       |
+| timer_clk2        | 4       |
+| i~5844            | 4       |
+| reduce_nor_256~3  | 4       |
+| reduce_nor_130    | 3       |
+| reduce_nor_139    | 3       |
+| reduce_nor_96     | 3       |
++-------------------+---------+
+
++-----------------------------------------------------------------------------+
+| Peripheral Signals                                                          |
++-----------------------------------------------------------------------------+
++--------------------------------------------------------------------+---------+-------+-----------------+---------------------------+----------+
+| Peripheral Signal                                                  | Source  | Usage | Dedicated Clock | Peripheral Control Signal | Polarity |
++--------------------------------------------------------------------+---------+-------+-----------------+---------------------------+----------+
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | LC1_B20 | Clock | no              | yes                       | +ve      |
++--------------------------------------------------------------------+---------+-------+-----------------+---------------------------+----------+
+
++-----------------------------------------------------------------------------+
+| LAB                                                                         |
++-----------------------------------------------------------------------------+
++--------------------------+----------------+
+| Number of Logic Elements | Number of LABs |
++--------------------------+----------------+
+| 0                        | 40             |
+| 1                        | 12             |
+| 2                        | 1              |
+| 3                        | 3              |
+| 4                        | 1              |
+| 5                        | 0              |
+| 6                        | 0              |
+| 7                        | 2              |
+| 8                        | 13             |
++--------------------------+----------------+
+
++-----------------------------------------------------------------------------+
+| Local Routing Interconnect                                                  |
++-----------------------------------------------------------------------------+
++-----------------------------+----------------+
+| Local Routing Interconnects | Number of LABs |
++-----------------------------+----------------+
+| 0                           | 54             |
+| 1                           | 1              |
+| 2                           | 0              |
+| 3                           | 6              |
+| 4                           | 1              |
+| 5                           | 0              |
+| 6                           | 4              |
+| 7                           | 5              |
+| 8                           | 1              |
++-----------------------------+----------------+
+
++-----------------------------------------------------------------------------+
+| LAB External Interconnect                                                   |
++-----------------------------------------------------------------------------+
++----------------------------+----------------+
+| LAB External Interconnects | Number of LABs |
++----------------------------+----------------+
+| 0                          | 40             |
+| 1                          | 4              |
+| 2                          | 2              |
+| 3                          | 5              |
+| 4                          | 9              |
+| 5                          | 3              |
+| 6                          | 5              |
+| 7                          | 0              |
+| 8                          | 1              |
+| 9                          | 0              |
+| 10                         | 2              |
+| 11                         | 0              |
+| 12                         | 0              |
+| 13                         | 1              |
++----------------------------+----------------+
+
++-----------------------------------------------------------------------------+
+| Row Interconnect                                                            |
++-----------------------------------------------------------------------------+
++-------+--------------------+-----------------------------+------------------------------+
+| Row   | Interconnect Used  | Left Half Interconnect Used | Right Half Interconnect Used |
++-------+--------------------+-----------------------------+------------------------------+
+|  A    |  55 / 96 ( 57 % )  |  2 / 48 ( 4 % )             |  12 / 48 ( 25 % )            |
+|  B    |  17 / 96 ( 17 % )  |  0 / 48 ( 0 % )             |  4 / 48 ( 8 % )              |
+|  C    |  4 / 96 ( 4 % )    |  0 / 48 ( 0 % )             |  3 / 48 ( 6 % )              |
+| Total |  76 / 288 ( 26 % ) |  2 / 144 ( 1 % )            |  19 / 144 ( 13 % )           |
++-------+--------------------+-----------------------------+------------------------------+
+
++-----------------------------------------------------------------------------+
+| LAB Column Interconnect                                                     |
++-----------------------------------------------------------------------------+
++-------+-------------------+
+| Col.  | Interconnect Used |
++-------+-------------------+
+| 1     |  0 / 24 ( 0 % )   |
+| 2     |  0 / 24 ( 0 % )   |
+| 3     |  1 / 24 ( 4 % )   |
+| 4     |  0 / 24 ( 0 % )   |
+| 5     |  1 / 24 ( 4 % )   |
+| 6     |  0 / 24 ( 0 % )   |
+| 7     |  0 / 24 ( 0 % )   |
+| 8     |  1 / 24 ( 4 % )   |
+| 9     |  1 / 24 ( 4 % )   |
+| 10    |  0 / 24 ( 0 % )   |
+| 11    |  0 / 24 ( 0 % )   |
+| 12    |  1 / 24 ( 4 % )   |
+| 13    |  3 / 24 ( 12 % )  |
+| 14    |  4 / 24 ( 16 % )  |
+| 15    |  2 / 24 ( 8 % )   |
+| 16    |  3 / 24 ( 12 % )  |
+| 17    |  1 / 24 ( 4 % )   |
+| 18    |  0 / 24 ( 0 % )   |
+| 19    |  0 / 24 ( 0 % )   |
+| 20    |  0 / 24 ( 0 % )   |
+| 21    |  0 / 24 ( 0 % )   |
+| 22    |  5 / 24 ( 20 % )  |
+| 23    |  1 / 24 ( 4 % )   |
+| 24    |  2 / 24 ( 8 % )   |
+| Total |  26 / 576 ( 4 % ) |
++-------+-------------------+
+
++-----------------------------------------------------------------------------+
+| EAB Column Interconnect                                                     |
++-----------------------------------------------------------------------------+
++-------+-------------------+
+| Col.  | Interconnect Used |
++-------+-------------------+
+| 1     |  0 / 48 ( 0 % )   |
+| Total |  0 / 48 ( 0 % )   |
++-------+-------------------+
+
++-----------------------------------------------------------------------------+
+| Resource Usage Summary                                                      |
++-----------------------------------------------------------------------------+
++----------------------------+--------------------+
+| Resource                   | Usage              |
++----------------------------+--------------------+
+| Logic cells                | 145 / 576 ( 25 % ) |
+| Registers                  | 70 / 774 ( 9 % )   |
+| User inserted logic cells  | 0                  |
+| I/O pins                   | 30 / 66 ( 45 % )   |
+| Clock pins                 | 0                  |
+| Dedicated input pins       | 0                  |
+| Global signals             | 2                  |
+| EABs                       | 0 / 3 ( 0 % )      |
+| Total memory bits          | 0 / 12,288 ( 0 % ) |
+| Total RAM block bits       | 0 / 12,288 ( 0 % ) |
+| PLLs                       | 0 / 1 ( 0 % )      |
+| Maximum fan-out node       | clk                |
+| Maximum fan-out            | 66                 |
+| Total fan-out              | 551                |
+| Average fan-out            | 3.15               |
++----------------------------+--------------------+
+
++-----------------------------------------------------------------------------+
+| Resource Utilization by Entity                                              |
++-----------------------------------------------------------------------------+
++----------------------------------------+-------------+-----------+-------------+------+--------------+-------------------+------------------+--------------------------------------------------------------------------+
+| Compilation Hierarchy Node             | Logic Cells | Registers | Memory Bits | Pins | LUT-Only LCs | Register-Only LCs | LUT/Register LCs | Full Hierarchy Name                                                      |
++----------------------------------------+-------------+-----------+-------------+------+--------------+-------------------+------------------+--------------------------------------------------------------------------+
+| |RamenTimer                            | 145 (108)   | 70        | 0           | 30   | 75 (57)      | 8 (8)             | 62 (43)          | |RamenTimer                                                              |
+|    |led:segled_0|                      | 6 (6)       | 0         | 0           | 0    | 6 (6)        | 0 (0)             | 0 (0)            | |RamenTimer|led:segled_0                                                 |
+|    |led:segled_1|                      | 6 (6)       | 0         | 0           | 0    | 6 (6)        | 0 (0)             | 0 (0)            | |RamenTimer|led:segled_1                                                 |
+|    |led:segled_2|                      | 6 (6)       | 0         | 0           | 0    | 6 (6)        | 0 (0)             | 0 (0)            | |RamenTimer|led:segled_2                                                 |
+|    |lpm_counter:clk_counter_rtl_0|     | 19 (0)      | 19        | 0           | 0    | 0 (0)        | 0 (0)             | 19 (0)           | |RamenTimer|lpm_counter:clk_counter_rtl_0                                |
+|       |alt_counter_f10ke:wysi_counter| | 19 (19)     | 19        | 0           | 0    | 0 (0)        | 0 (0)             | 19 (19)          | |RamenTimer|lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter |
++----------------------------------------+-------------+-----------+-------------+------+--------------+-------------------+------------------+--------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------------+
+| Delay Chain Summary                                                         |
++-----------------------------------------------------------------------------+
++-------------+----------+-------------+
+| Name        | Pin Type | Pad to Core |
++-------------+----------+-------------+
+| clk         | Input    | OFF         |
+| sw_in0      | Input    | ON          |
+| sw_in2      | Input    | ON          |
+| sw_in1      | Input    | ON          |
+| sw_in_run   | Input    | ON          |
+| led_out0[7] | Output   | OFF         |
+| led_out0[6] | Output   | OFF         |
+| led_out0[5] | Output   | OFF         |
+| led_out0[4] | Output   | OFF         |
+| led_out0[3] | Output   | OFF         |
+| led_out0[2] | Output   | OFF         |
+| led_out0[1] | Output   | OFF         |
+| led_out0[0] | Output   | OFF         |
+| led_out1[7] | Output   | OFF         |
+| led_out1[6] | Output   | OFF         |
+| led_out1[5] | Output   | OFF         |
+| led_out1[4] | Output   | OFF         |
+| led_out1[3] | Output   | OFF         |
+| led_out1[2] | Output   | OFF         |
+| led_out1[1] | Output   | OFF         |
+| led_out1[0] | Output   | OFF         |
+| led_out2[7] | Output   | OFF         |
+| led_out2[6] | Output   | OFF         |
+| led_out2[5] | Output   | OFF         |
+| led_out2[4] | Output   | OFF         |
+| led_out2[3] | Output   | OFF         |
+| led_out2[2] | Output   | OFF         |
+| led_out2[1] | Output   | OFF         |
+| led_out2[0] | Output   | OFF         |
+| speaker_out | Output   | OFF         |
++-------------+----------+-------------+
+
++-----------------------------------------------------------------------------+
+| Equations                                                                   |
++-----------------------------------------------------------------------------+
+The equations can be found in D:\circuit\ramentimer\RamenTimer.eqn.htm.
+
++-----------------------------------------------------------------------------+
+| Pin-Out File                                                                |
++-----------------------------------------------------------------------------+
+The pin-out file can be found in D:\circuit\ramentimer\RamenTimer.pin.
+
++-----------------------------------------------------------------------------+
+| Timing Settings                                                             |
++-----------------------------------------------------------------------------+
++-----------------+-------------+------------------+------------------------------------------------------------------+--------------------+
+| Assignment File | Source Name | Destination Name | Option                                                           | Setting            |
++-----------------+-------------+------------------+------------------------------------------------------------------+--------------------+
+| ramentimer.psf  |             |                  | Include external delays to/from device pins in fmax calculations | Off                |
+| ramentimer.psf  |             |                  | Run All Timing Analyses                                          | Off                |
+| ramentimer.psf  |             |                  | Ignore user-defined clock settings                               | Off                |
+| ramentimer.psf  |             |                  | Default hold multicycle                                          | Same As Multicycle |
+| ramentimer.psf  |             |                  | Cut off feedback from I/O pins                                   | On                 |
+| ramentimer.psf  |             |                  | Cut off clear and preset signal paths                            | On                 |
+| ramentimer.psf  |             |                  | Cut off read during write signal paths                           | On                 |
+| ramentimer.psf  |             |                  | Cut paths between unrelated clock domains                        | On                 |
+| ramentimer.psf  |             |                  | Number of paths to report                                        | 200                |
+| ramentimer.psf  |             |                  | Number of destination nodes to report                            | 10                 |
+| ramentimer.psf  |             |                  | Number of source nodes to report per destination node            | 10                 |
+| ramentimer.psf  |             |                  | Maximum Strongly Connected Component loop size                   | 50                 |
+|                 |             |                  | Device name                                                      | EP1K10TC100-3      |
++-----------------+-------------+------------------+------------------------------------------------------------------+--------------------+
+
++-----------------------------------------------------------------------------+
+| fmax (not incl. delays to/from pins)                                        |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+---------------+------------------------------------------------------------+
+| Clock Name                                                                  | Required fmax | Actual fmax (period)                                       |
+|    -- Destination Register Name                                             |               |                                                            |
+|       -- Source Register Name                                               |               |                                                            |
++-----------------------------------------------------------------------------+---------------+------------------------------------------------------------+
+| clk                                                                         | None          | 70.42 MHz ( period = 14.200 ns )                           |
+|    -- is_run                                                                | None          | 70.42 MHz ( period = 14.200 ns )                           |
+|       -- timer_counter0[0]                                                  | None          | 70.42 MHz ( period = 14.200 ns )                           |
+|       -- timer_counter0[1]                                                  | None          | 70.42 MHz ( period = 14.200 ns )                           |
+|       -- timer_counter1[0]                                                  | None          | 71.43 MHz ( period = 14.000 ns )                           |
+|       -- timer_counter1[1]                                                  | None          | 71.43 MHz ( period = 14.000 ns )                           |
+|       -- timer_counter2[0]                                                  | None          | 71.43 MHz ( period = 14.000 ns )                           |
+|       -- timer_counter2[1]                                                  | None          | 71.43 MHz ( period = 14.000 ns )                           |
+|       -- timer_counter3[0]                                                  | None          | 72.46 MHz ( period = 13.800 ns )                           |
+|       -- timer_counter0[2]                                                  | None          | 72.46 MHz ( period = 13.800 ns )                           |
+|       -- timer_counter1[3]                                                  | None          | 73.53 MHz ( period = 13.600 ns )                           |
+|       -- timer_counter1[2]                                                  | None          | 73.53 MHz ( period = 13.600 ns )                           |
+|       -- Timing analysis results restricted.                                |               | To change the limit use Timing Settings (Assignments menu) |
+|    -- speaker_out~reg0                                                      | None          | 71.43 MHz ( period = 14.000 ns )                           |
+|       -- timer_counter0[0]                                                  | None          | 71.43 MHz ( period = 14.000 ns )                           |
+|       -- timer_counter0[1]                                                  | None          | 71.43 MHz ( period = 14.000 ns )                           |
+|       -- timer_counter1[0]                                                  | None          | 72.46 MHz ( period = 13.800 ns )                           |
+|       -- timer_counter1[1]                                                  | None          | 72.46 MHz ( period = 13.800 ns )                           |
+|       -- timer_counter2[0]                                                  | None          | 72.46 MHz ( period = 13.800 ns )                           |
+|       -- timer_counter2[1]                                                  | None          | 72.46 MHz ( period = 13.800 ns )                           |
+|       -- timer_counter0[2]                                                  | None          | 73.53 MHz ( period = 13.600 ns )                           |
+|       -- timer_counter1[3]                                                  | None          | 74.63 MHz ( period = 13.400 ns )                           |
+|       -- timer_counter1[2]                                                  | None          | 74.63 MHz ( period = 13.400 ns )                           |
+|       -- timer_counter3[0]                                                  | None          | 74.63 MHz ( period = 13.400 ns )                           |
+|       -- Timing analysis results restricted.                                |               | To change the limit use Timing Settings (Assignments menu) |
+|    -- timer_counter0[3]                                                     | None          | 80.65 MHz ( period = 12.400 ns )                           |
+|       -- is_run                                                             | None          | 80.65 MHz ( period = 12.400 ns )                           |
+|       -- timer_clk0                                                         | None          | 126.58 MHz ( period = 7.900 ns )                           |
+|       -- timer_counter0[3]                                                  | None          | 128.21 MHz ( period = 7.800 ns )                           |
+|       -- timer_counter0[2]                                                  | None          | 140.85 MHz ( period = 7.100 ns )                           |
+|       -- timer_counter0[0]                                                  | None          | 142.86 MHz ( period = 7.000 ns )                           |
+|       -- timer_counter0[1]                                                  | None          | 144.93 MHz ( period = 6.900 ns )                           |
+|    -- timer_counter0[1]                                                     | None          | 96.15 MHz ( period = 10.400 ns )                           |
+|       -- is_run                                                             | None          | 96.15 MHz ( period = 10.400 ns )                           |
+|       -- timer_clk0                                                         | None          | 144.93 MHz ( period = 6.900 ns )                           |
+|       -- timer_counter0[3]                                                  | None          | 147.06 MHz ( period = 6.800 ns )                           |
+|       -- timer_counter0[2]                                                  | None          | 163.93 MHz ( period = 6.100 ns )                           |
+|       -- timer_counter0[0]                                                  | None          | 166.67 MHz ( period = 6.000 ns )                           |
+|       -- timer_counter0[1]                                                  | None          | 172.41 MHz ( period = 5.800 ns )                           |
+|    -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[0]     | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | None          | 101.01 MHz ( period = 9.900 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | None          | 101.01 MHz ( period = 9.900 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | None          | 103.09 MHz ( period = 9.700 ns )                           |
+|       -- Timing analysis results restricted.                                |               | To change the limit use Timing Settings (Assignments menu) |
+|    -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[1]     | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | None          | 101.01 MHz ( period = 9.900 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | None          | 101.01 MHz ( period = 9.900 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | None          | 103.09 MHz ( period = 9.700 ns )                           |
+|       -- Timing analysis results restricted.                                |               | To change the limit use Timing Settings (Assignments menu) |
+|    -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[2]     | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | None          | 101.01 MHz ( period = 9.900 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | None          | 101.01 MHz ( period = 9.900 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | None          | 103.09 MHz ( period = 9.700 ns )                           |
+|       -- Timing analysis results restricted.                                |               | To change the limit use Timing Settings (Assignments menu) |
+|    -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]     | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | None          | 101.01 MHz ( period = 9.900 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | None          | 101.01 MHz ( period = 9.900 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | None          | 103.09 MHz ( period = 9.700 ns )                           |
+|       -- Timing analysis results restricted.                                |               | To change the limit use Timing Settings (Assignments menu) |
+|    -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]     | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | None          | 101.01 MHz ( period = 9.900 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | None          | 101.01 MHz ( period = 9.900 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | None          | 103.09 MHz ( period = 9.700 ns )                           |
+|       -- Timing analysis results restricted.                                |               | To change the limit use Timing Settings (Assignments menu) |
+|    -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]     | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | None          | 98.04 MHz ( period = 10.200 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | None          | 99.01 MHz ( period = 10.100 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | None          | 101.01 MHz ( period = 9.900 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | None          | 101.01 MHz ( period = 9.900 ns )                           |
+|       -- lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | None          | 103.09 MHz ( period = 9.700 ns )                           |
+|       -- Timing analysis results restricted.                                |               | To change the limit use Timing Settings (Assignments menu) |
+|    -- Timing analysis results restricted.                                   |               | To change the limit use Timing Settings (Assignments menu) |
++-----------------------------------------------------------------------------+---------------+------------------------------------------------------------+
+
++-----------------------------------------------------------------------------+
+| Register-to-Register fmax                                                   |
++-----------------------------------------------------------------------------+
++--------------------------------------------------------------------+--------------------------------------------------------------------+-------------------+------------------------+---------------+-----------------------------------+
+| Source Register Name                                               | Destination Register Name                                          | Source Clock Name | Destination Clock Name | Required fmax | Actual fmax (period)              |
++--------------------------------------------------------------------+--------------------------------------------------------------------+-------------------+------------------------+---------------+-----------------------------------+
+| timer_counter0[0]                                                  | is_run                                                             | clk               | clk                    | None          | 70.42 MHz ( period = 14.200 ns )  |
+| timer_counter0[1]                                                  | is_run                                                             | clk               | clk                    | None          | 70.42 MHz ( period = 14.200 ns )  |
+| timer_counter0[0]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 71.43 MHz ( period = 14.000 ns )  |
+| timer_counter0[1]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 71.43 MHz ( period = 14.000 ns )  |
+| timer_counter1[0]                                                  | is_run                                                             | clk               | clk                    | None          | 71.43 MHz ( period = 14.000 ns )  |
+| timer_counter1[1]                                                  | is_run                                                             | clk               | clk                    | None          | 71.43 MHz ( period = 14.000 ns )  |
+| timer_counter2[0]                                                  | is_run                                                             | clk               | clk                    | None          | 71.43 MHz ( period = 14.000 ns )  |
+| timer_counter2[1]                                                  | is_run                                                             | clk               | clk                    | None          | 71.43 MHz ( period = 14.000 ns )  |
+| timer_counter1[0]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 72.46 MHz ( period = 13.800 ns )  |
+| timer_counter1[1]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 72.46 MHz ( period = 13.800 ns )  |
+| timer_counter2[0]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 72.46 MHz ( period = 13.800 ns )  |
+| timer_counter2[1]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 72.46 MHz ( period = 13.800 ns )  |
+| timer_counter3[0]                                                  | is_run                                                             | clk               | clk                    | None          | 72.46 MHz ( period = 13.800 ns )  |
+| timer_counter0[2]                                                  | is_run                                                             | clk               | clk                    | None          | 72.46 MHz ( period = 13.800 ns )  |
+| timer_counter0[2]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 73.53 MHz ( period = 13.600 ns )  |
+| timer_counter1[3]                                                  | is_run                                                             | clk               | clk                    | None          | 73.53 MHz ( period = 13.600 ns )  |
+| timer_counter1[2]                                                  | is_run                                                             | clk               | clk                    | None          | 73.53 MHz ( period = 13.600 ns )  |
+| timer_counter2[3]                                                  | is_run                                                             | clk               | clk                    | None          | 73.53 MHz ( period = 13.600 ns )  |
+| timer_counter2[2]                                                  | is_run                                                             | clk               | clk                    | None          | 73.53 MHz ( period = 13.600 ns )  |
+| timer_counter1[3]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 74.63 MHz ( period = 13.400 ns )  |
+| timer_counter1[2]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 74.63 MHz ( period = 13.400 ns )  |
+| timer_counter3[0]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 74.63 MHz ( period = 13.400 ns )  |
+| timer_counter2[3]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 74.63 MHz ( period = 13.400 ns )  |
+| timer_counter2[2]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 74.63 MHz ( period = 13.400 ns )  |
+| timer_counter4[0]                                                  | is_run                                                             | clk               | clk                    | None          | 74.63 MHz ( period = 13.400 ns )  |
+| timer_counter3[3]                                                  | is_run                                                             | clk               | clk                    | None          | 74.63 MHz ( period = 13.400 ns )  |
+| timer_counter4[2]                                                  | is_run                                                             | clk               | clk                    | None          | 75.76 MHz ( period = 13.200 ns )  |
+| timer_counter4[1]                                                  | is_run                                                             | clk               | clk                    | None          | 75.76 MHz ( period = 13.200 ns )  |
+| timer_counter4[0]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 76.92 MHz ( period = 13.000 ns )  |
+| timer_counter3[3]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 76.92 MHz ( period = 13.000 ns )  |
+| timer_counter4[2]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 78.13 MHz ( period = 12.800 ns )  |
+| timer_counter4[1]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 78.13 MHz ( period = 12.800 ns )  |
+| timer_counter4[3]                                                  | is_run                                                             | clk               | clk                    | None          | 78.13 MHz ( period = 12.800 ns )  |
+| is_run                                                             | timer_counter0[3]                                                  | clk               | clk                    | None          | 80.65 MHz ( period = 12.400 ns )  |
+| timer_counter4[3]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 80.65 MHz ( period = 12.400 ns )  |
+| timer_counter0[3]                                                  | is_run                                                             | clk               | clk                    | None          | 84.75 MHz ( period = 11.800 ns )  |
+| timer_counter0[3]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 86.21 MHz ( period = 11.600 ns )  |
+| is_run                                                             | timer_counter0[1]                                                  | clk               | clk                    | None          | 96.15 MHz ( period = 10.400 ns )  |
+| timer_counter3[1]                                                  | is_run                                                             | clk               | clk                    | None          | 96.15 MHz ( period = 10.400 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[0]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[0]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[0]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[1]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[1]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[1]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[2]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[2]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[2]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| is_run                                                             | timer_counter0[0]                                                  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| is_run                                                             | timer_counter0[2]                                                  | clk               | clk                    | None          | 98.04 MHz ( period = 10.200 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[0]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[0]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[0]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[0]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[1]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[1]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[1]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[1]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[2]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[2]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[2]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[2]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | clk               | clk                    | None          | 99.01 MHz ( period = 10.100 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| timer_counter3[1]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| timer_counter3[2]                                                  | is_run                                                             | clk               | clk                    | None          | 100.00 MHz ( period = 10.000 ns ) |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[0]  | clk               | clk                    | None          | 101.01 MHz ( period = 9.900 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[0]  | clk               | clk                    | None          | 101.01 MHz ( period = 9.900 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[1]  | clk               | clk                    | None          | 101.01 MHz ( period = 9.900 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[1]  | clk               | clk                    | None          | 101.01 MHz ( period = 9.900 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[2]  | clk               | clk                    | None          | 101.01 MHz ( period = 9.900 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[2]  | clk               | clk                    | None          | 101.01 MHz ( period = 9.900 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | clk               | clk                    | None          | 101.01 MHz ( period = 9.900 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | clk               | clk                    | None          | 101.01 MHz ( period = 9.900 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | clk               | clk                    | None          | 101.01 MHz ( period = 9.900 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | clk               | clk                    | None          | 101.01 MHz ( period = 9.900 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | clk               | clk                    | None          | 101.01 MHz ( period = 9.900 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | clk               | clk                    | None          | 101.01 MHz ( period = 9.900 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | clk               | clk                    | None          | 102.04 MHz ( period = 9.800 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | clk               | clk                    | None          | 102.04 MHz ( period = 9.800 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | clk               | clk                    | None          | 102.04 MHz ( period = 9.800 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | clk               | clk                    | None          | 102.04 MHz ( period = 9.800 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | clk               | clk                    | None          | 102.04 MHz ( period = 9.800 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | clk               | clk                    | None          | 102.04 MHz ( period = 9.800 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | clk               | clk                    | None          | 102.04 MHz ( period = 9.800 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | clk               | clk                    | None          | 102.04 MHz ( period = 9.800 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | clk               | clk                    | None          | 102.04 MHz ( period = 9.800 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | clk               | clk                    | None          | 102.04 MHz ( period = 9.800 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | clk               | clk                    | None          | 102.04 MHz ( period = 9.800 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | clk               | clk                    | None          | 102.04 MHz ( period = 9.800 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | clk               | clk                    | None          | 102.04 MHz ( period = 9.800 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | clk               | clk                    | None          | 102.04 MHz ( period = 9.800 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | clk               | clk                    | None          | 102.04 MHz ( period = 9.800 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[14] | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | clk               | clk                    | None          | 102.04 MHz ( period = 9.800 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[0]  | clk               | clk                    | None          | 103.09 MHz ( period = 9.700 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[1]  | clk               | clk                    | None          | 103.09 MHz ( period = 9.700 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[2]  | clk               | clk                    | None          | 103.09 MHz ( period = 9.700 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | clk               | clk                    | None          | 103.09 MHz ( period = 9.700 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | clk               | clk                    | None          | 103.09 MHz ( period = 9.700 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | clk               | clk                    | None          | 103.09 MHz ( period = 9.700 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[0]  | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[0]  | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[1]  | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[1]  | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[2]  | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[2]  | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[11] | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[10] | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[9]  | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[8]  | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[7]  | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[6]  | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[4]  | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| timer_counter3[2]                                                  | speaker_out~reg0                                                   | clk               | clk                    | None          | 104.17 MHz ( period = 9.600 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | clk               | clk                    | None          | 105.26 MHz ( period = 9.500 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[13] | clk               | clk                    | None          | 105.26 MHz ( period = 9.500 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[3]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | clk               | clk                    | None          | 105.26 MHz ( period = 9.500 ns )  |
+| lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[5]  | lpm_counter:clk_counter_rtl_0|alt_counter_f10ke:wysi_counter|q[12] | clk               | clk                    | None          | 105.26 MHz ( period = 9.500 ns )  |
+| Timing analysis restricted to 200 rows.                            | To change the limit use Timing Settings (Assignments menu)         |                   |                        |               |                                   |
++--------------------------------------------------------------------+--------------------------------------------------------------------+-------------------+------------------------+---------------+-----------------------------------+
+
++-----------------------------------------------------------------------------+
+| tsu (Input Setup Times)                                                     |
++-----------------------------------------------------------------------------+
++---------------------+------------+
+| Data Pin Name       | Actual tsu |
+|    -- Register Name |            |
+|       -- Clock Name |            |
++---------------------+------------+
+| sw_in2              | 1.900 ns   |
+|    -- sw_node2      | 1.900 ns   |
+|       -- clk        | 1.900 ns   |
+| sw_in0              | 1.800 ns   |
+|    -- sw_node0      | 1.800 ns   |
+|       -- clk        | 1.800 ns   |
+| sw_in1              | 1.800 ns   |
+|    -- sw_node1      | 1.800 ns   |
+|       -- clk        | 1.800 ns   |
+| sw_in_run           | 1.800 ns   |
+|    -- sw_node_run   | 1.800 ns   |
+|       -- clk        | 1.800 ns   |
++---------------------+------------+
+
++-----------------------------------------------------------------------------+
+| th (Input Hold Times)                                                       |
++-----------------------------------------------------------------------------+
++---------------------+-----------+
+| Data Pin Name       | Actual th |
+|    -- Register Name |           |
+|       -- Clock Name |           |
++---------------------+-----------+
+| sw_in0              | 0.100 ns  |
+|    -- sw_node0      | 0.100 ns  |
+|       -- clk        | 0.100 ns  |
+| sw_in1              | 0.100 ns  |
+|    -- sw_node1      | 0.100 ns  |
+|       -- clk        | 0.100 ns  |
+| sw_in_run           | 0.100 ns  |
+|    -- sw_node_run   | 0.100 ns  |
+|       -- clk        | 0.100 ns  |
+| sw_in2              | <= 0 ns   |
+|    -- sw_node2      | <= 0 ns   |
+|       -- clk        | <= 0 ns   |
++---------------------+-----------+
+
++-----------------------------------------------------------------------------+
+| tco (Clock to Output Delays)                                                |
++-----------------------------------------------------------------------------+
++------------------------+------------+
+| Output Name            | Actual tco |
+|    -- Register Name    |            |
+|       -- Clock Name    |            |
++------------------------+------------+
+| led_out2[7]            | 13.900 ns  |
+|    -- timer_out2[3]    | 13.900 ns  |
+|       -- clk           | 13.900 ns  |
+|    -- timer_out2[2]    | 12.800 ns  |
+|       -- clk           | 12.800 ns  |
+|    -- timer_out2[0]    | 12.800 ns  |
+|       -- clk           | 12.800 ns  |
+|    -- timer_out2[1]    | 12.600 ns  |
+|       -- clk           | 12.600 ns  |
+| led_out2[3]            | 13.900 ns  |
+|    -- timer_out2[3]    | 13.900 ns  |
+|       -- clk           | 13.900 ns  |
+|    -- timer_out2[2]    | 12.800 ns  |
+|       -- clk           | 12.800 ns  |
+|    -- timer_out2[1]    | 12.800 ns  |
+|       -- clk           | 12.800 ns  |
+|    -- timer_out2[0]    | 12.600 ns  |
+|       -- clk           | 12.600 ns  |
+| led_out2[2]            | 13.900 ns  |
+|    -- timer_out2[3]    | 13.900 ns  |
+|       -- clk           | 13.900 ns  |
+|    -- timer_out2[0]    | 12.800 ns  |
+|       -- clk           | 12.800 ns  |
+|    -- timer_out2[1]    | 12.800 ns  |
+|       -- clk           | 12.800 ns  |
+|    -- timer_out2[2]    | 12.600 ns  |
+|       -- clk           | 12.600 ns  |
+| led_out2[1]            | 13.900 ns  |
+|    -- timer_out2[3]    | 13.900 ns  |
+|       -- clk           | 13.900 ns  |
+|    -- timer_out2[2]    | 13.900 ns  |
+|       -- clk           | 13.900 ns  |
+|    -- timer_out2[1]    | 13.800 ns  |
+|       -- clk           | 13.800 ns  |
+|    -- timer_out2[0]    | 13.700 ns  |
+|       -- clk           | 13.700 ns  |
+| led_out2[6]            | 13.800 ns  |
+|    -- timer_out2[3]    | 13.800 ns  |
+|       -- clk           | 13.800 ns  |
+|    -- timer_out2[0]    | 12.900 ns  |
+|       -- clk           | 12.900 ns  |
+|    -- timer_out2[2]    | 12.800 ns  |
+|       -- clk           | 12.800 ns  |
+|    -- timer_out2[1]    | 12.600 ns  |
+|       -- clk           | 12.600 ns  |
+| led_out2[5]            | 13.800 ns  |
+|    -- timer_out2[3]    | 13.800 ns  |
+|       -- clk           | 13.800 ns  |
+|    -- timer_out2[2]    | 13.700 ns  |
+|       -- clk           | 13.700 ns  |
+|    -- timer_out2[0]    | 13.700 ns  |
+|       -- clk           | 13.700 ns  |
+|    -- timer_out2[1]    | 13.500 ns  |
+|       -- clk           | 13.500 ns  |
+| led_out2[4]            | 13.800 ns  |
+|    -- timer_out2[2]    | 13.800 ns  |
+|       -- clk           | 13.800 ns  |
+|    -- timer_out2[3]    | 13.700 ns  |
+|       -- clk           | 13.700 ns  |
+|    -- timer_out2[0]    | 13.700 ns  |
+|       -- clk           | 13.700 ns  |
+|    -- timer_out2[1]    | 13.500 ns  |
+|       -- clk           | 13.500 ns  |
+| led_out0[1]            | 13.700 ns  |
+|    -- timer_out0[3]    | 13.700 ns  |
+|       -- clk           | 13.700 ns  |
+|    -- timer_out0[2]    | 13.500 ns  |
+|       -- clk           | 13.500 ns  |
+|    -- timer_out0[1]    | 13.500 ns  |
+|       -- clk           | 13.500 ns  |
+|    -- timer_out0[0]    | 13.400 ns  |
+|       -- clk           | 13.400 ns  |
+| led_out1[5]            | 13.700 ns  |
+|    -- timer_out1[3]    | 13.700 ns  |
+|       -- clk           | 13.700 ns  |
+|    -- timer_out1[2]    | 13.600 ns  |
+|       -- clk           | 13.600 ns  |
+|    -- timer_out1[0]    | 13.200 ns  |
+|       -- clk           | 13.200 ns  |
+|    -- timer_out1[1]    | 12.100 ns  |
+|       -- clk           | 12.100 ns  |
+| led_out1[4]            | 13.700 ns  |
+|    -- timer_out1[2]    | 13.700 ns  |
+|       -- clk           | 13.700 ns  |
+|    -- timer_out1[3]    | 13.600 ns  |
+|       -- clk           | 13.600 ns  |
+|    -- timer_out1[0]    | 13.200 ns  |
+|       -- clk           | 13.200 ns  |
+|    -- timer_out1[1]    | 12.100 ns  |
+|       -- clk           | 12.100 ns  |
+| led_out1[3]            | 13.700 ns  |
+|    -- timer_out1[3]    | 13.700 ns  |
+|       -- clk           | 13.700 ns  |
+|    -- timer_out1[2]    | 13.600 ns  |
+|       -- clk           | 13.600 ns  |
+|    -- timer_out1[0]    | 13.000 ns  |
+|       -- clk           | 13.000 ns  |
+|    -- timer_out1[1]    | 12.300 ns  |
+|       -- clk           | 12.300 ns  |
+| led_out1[1]            | 13.700 ns  |
+|    -- timer_out1[3]    | 13.700 ns  |
+|       -- clk           | 13.700 ns  |
+|    -- timer_out1[2]    | 13.600 ns  |
+|       -- clk           | 13.600 ns  |
+|    -- timer_out1[0]    | 13.000 ns  |
+|       -- clk           | 13.000 ns  |
+|    -- timer_out1[1]    | 12.300 ns  |
+|       -- clk           | 12.300 ns  |
+| led_out0[7]            | 13.600 ns  |
+|    -- timer_out0[3]    | 13.600 ns  |
+|       -- clk           | 13.600 ns  |
+|    -- timer_out0[2]    | 13.500 ns  |
+|       -- clk           | 13.500 ns  |
+|    -- timer_out0[0]    | 13.500 ns  |
+|       -- clk           | 13.500 ns  |
+|    -- timer_out0[1]    | 13.300 ns  |
+|       -- clk           | 13.300 ns  |
+| led_out0[6]            | 13.600 ns  |
+|    -- timer_out0[0]    | 13.600 ns  |
+|       -- clk           | 13.600 ns  |
+|    -- timer_out0[3]    | 13.500 ns  |
+|       -- clk           | 13.500 ns  |
+|    -- timer_out0[2]    | 13.500 ns  |
+|       -- clk           | 13.500 ns  |
+|    -- timer_out0[1]    | 13.300 ns  |
+|       -- clk           | 13.300 ns  |
+| led_out0[5]            | 13.600 ns  |
+|    -- timer_out0[3]    | 13.600 ns  |
+|       -- clk           | 13.600 ns  |
+|    -- timer_out0[2]    | 13.500 ns  |
+|       -- clk           | 13.500 ns  |
+|    -- timer_out0[0]    | 13.500 ns  |
+|       -- clk           | 13.500 ns  |
+|    -- timer_out0[1]    | 13.300 ns  |
+|       -- clk           | 13.300 ns  |
+| led_out0[2]            | 13.600 ns  |
+|    -- timer_out0[3]    | 13.600 ns  |
+|       -- clk           | 13.600 ns  |
+|    -- timer_out0[0]    | 13.500 ns  |
+|       -- clk           | 13.500 ns  |
+|    -- timer_out0[1]    | 13.500 ns  |
+|       -- clk           | 13.500 ns  |
+|    -- timer_out0[2]    | 13.300 ns  |
+|       -- clk           | 13.300 ns  |
+| led_out0[4]            | 13.000 ns  |
+|    -- timer_out0[2]    | 13.000 ns  |
+|       -- clk           | 13.000 ns  |
+|    -- timer_out0[3]    | 12.900 ns  |
+|       -- clk           | 12.900 ns  |
+|    -- timer_out0[0]    | 12.900 ns  |
+|       -- clk           | 12.900 ns  |
+|    -- timer_out0[1]    | 12.700 ns  |
+|       -- clk           | 12.700 ns  |
+| led_out1[7]            | 13.000 ns  |
+|    -- timer_out1[3]    | 13.000 ns  |
+|       -- clk           | 13.000 ns  |
+|    -- timer_out1[2]    | 12.900 ns  |
+|       -- clk           | 12.900 ns  |
+|    -- timer_out1[0]    | 12.500 ns  |
+|       -- clk           | 12.500 ns  |
+|    -- timer_out1[1]    | 11.400 ns  |
+|       -- clk           | 11.400 ns  |
+| led_out1[2]            | 13.000 ns  |
+|    -- timer_out1[3]    | 13.000 ns  |
+|       -- clk           | 13.000 ns  |
+|    -- timer_out1[2]    | 12.700 ns  |
+|       -- clk           | 12.700 ns  |
+|    -- timer_out1[0]    | 12.500 ns  |
+|       -- clk           | 12.500 ns  |
+|    -- timer_out1[1]    | 11.600 ns  |
+|       -- clk           | 11.600 ns  |
+| led_out1[6]            | 12.900 ns  |
+|    -- timer_out1[3]    | 12.900 ns  |
+|       -- clk           | 12.900 ns  |
+|    -- timer_out1[2]    | 12.900 ns  |
+|       -- clk           | 12.900 ns  |
+|    -- timer_out1[0]    | 12.600 ns  |
+|       -- clk           | 12.600 ns  |
+|    -- timer_out1[1]    | 11.400 ns  |
+|       -- clk           | 11.400 ns  |
+| led_out0[3]            | 11.700 ns  |
+|    -- timer_out0[3]    | 11.700 ns  |
+|       -- clk           | 11.700 ns  |
+|    -- timer_out0[2]    | 11.600 ns  |
+|       -- clk           | 11.600 ns  |
+|    -- timer_out0[1]    | 11.600 ns  |
+|       -- clk           | 11.600 ns  |
+|    -- timer_out0[0]    | 11.400 ns  |
+|       -- clk           | 11.400 ns  |
+| speaker_out            | 10.400 ns  |
+|    -- speaker_out~reg0 | 10.400 ns  |
+|       -- clk           | 10.400 ns  |
++------------------------+------------+
+
++-----------------------------------------------------------------------------+
+| Processing Time                                                             |
++-----------------------------------------------------------------------------+
++-------------------+--------------+
+| Module Name       | Elapsed Time |
++-------------------+--------------+
+| Database Builder  | 00:00:02     |
+| Logic Synthesizer | 00:00:02     |
+| Fitter            | 00:00:05     |
+| Assembler         | 00:00:00     |
+| Timing Analyzer   | 00:00:00     |
+| Total             | 00:00:11     |
++-------------------+--------------+
+
